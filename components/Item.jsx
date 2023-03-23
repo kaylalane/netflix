@@ -5,13 +5,14 @@ const itemWidth = 250;
 const itemHeight = 150;
 
 export default function Item({title}) {
+  const s = "\"" + title.img + '\"';
   return(
     <>
       <div className="item-group" key={title.title}>
         
         <div className="item ">
           <Image
-            src={require(title.img)}
+            src={title.img}
             alt={title.title}
             width={itemWidth}
             height={itemHeight}

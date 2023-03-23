@@ -1,7 +1,7 @@
 export const Titles = [
   {
     title: "The Glory",
-    img: "/../media/the-glory.jpeg",
+    img: "/../public/the-glory.jpeg",
     genres: [
       "TV Drama",
       "Thriller"
@@ -145,7 +145,7 @@ export const Titles = [
 export const myList = [
   {
     title: "The Glory",
-    img: "/../public/the-glory.jpeg",
+    img: "/the-glory.jpeg",
     genres: [
       "TV Drama",
       "Thriller"
@@ -164,7 +164,7 @@ export const myList = [
   },
   {
     title: "My Liberation Notes",
-    img: "/../public/my-liberation-notes.jpeg",
+    img: "/my-liberation-notes.jpeg",
     genres: [
       "Korean",
       "TV Dramas"
@@ -182,7 +182,7 @@ export const myList = [
   },
   {
     title:"Wednesday",
-    img: "/../public/wednesday.jpeg",
+    img: "/wednesday.jpeg",
     genres: [
       "TV Mysteries",
       "Dark Comedy"
@@ -400,7 +400,7 @@ export const popularOnNetflix = [
 export const tvShowsTrendingNow = [
   {
     title: "Bojack Horseman",
-    img:"/../public/bojack-horseman.jpeg",
+    img:"../public/bojack-horseman.jpeg",
     genres: [
       "Sitcom",
       "TV Comedies"
