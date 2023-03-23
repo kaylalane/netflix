@@ -145,7 +145,7 @@ export const Titles = [
 export const myList = [
   {
     title: "The Glory",
-    img: "/the-glory.jpeg",
+    img: "/../public/the-glory.jpeg",
     genres: [
       "TV Drama",
       "Thriller"
@@ -164,7 +164,7 @@ export const myList = [
   },
   {
     title: "My Liberation Notes",
-    img: "/my-liberation-notes.jpeg",
+    img: "/../public/my-liberation-notes.jpeg",
     genres: [
       "Korean",
       "TV Dramas"
@@ -182,7 +182,7 @@ export const myList = [
   },
   {
     title:"Wednesday",
-    img: "/wednesday.jpeg",
+    img: "/../public/wednesday.jpeg",
     genres: [
       "TV Mysteries",
       "Dark Comedy"
