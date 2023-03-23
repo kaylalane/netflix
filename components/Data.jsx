@@ -145,7 +145,7 @@ export const Titles = [
 export const myList = [
   {
     title: "The Glory",
-    img: "/../public/the-glory.jpeg",
+    img: "/the-glory.jpeg",
     genres: [
       "TV Drama",
       "Thriller"
