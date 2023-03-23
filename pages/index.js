@@ -7,7 +7,6 @@ import { useState} from 'react';
 import feature from '../media/disenchantment.jpeg'
 import { myList, popularOnNetflix } from '../components/Data';
 import Row from '@/components/Row';
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
