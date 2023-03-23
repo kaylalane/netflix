@@ -164,7 +164,7 @@ export const myList = [
   },
   {
     title: "My Liberation Notes",
-    img: "/../public/my-liberation-notes.jpeg",
+    img: "/my-liberation-notes.jpeg",
     genres: [
       "Korean",
       "TV Dramas"
@@ -182,7 +182,7 @@ export const myList = [
   },
   {
     title:"Wednesday",
-    img: "/../public/wednesday.jpeg",
+    img: "/wednesday.jpeg",
     genres: [
       "TV Mysteries",
       "Dark Comedy"
@@ -200,7 +200,7 @@ export const myList = [
   },
   {
     title:"The Disastrous Life of Saiki K.",
-    img: "/../public/saiki.jpeg",
+    img: "//saiki.jpeg",
     genres: [
       "Deadpan",
       "Comedy Anime"
@@ -216,7 +216,7 @@ export const myList = [
   },
   {
     title:"Inside Job",
-    img: "/../public/inside-job.jpeg",
+    img: "/inside-job.jpeg",
     genres: [
       "Witty",
       "Adult Cartoon"
@@ -232,7 +232,7 @@ export const myList = [
   },
   {
     title:"Alice in Borderland",
-    img: "/../public/alice-in-borderland.jpeg",
+    img: "/alice-in-borderland.jpeg",
     genres: [
       "Dystopian",
       "Dark"
@@ -248,7 +248,7 @@ export const myList = [
   },
   {
     title: "First Kill",
-    img:"/../public/first-kill.jpeg",
+    img:"/first-kill.jpeg",
     genres: [
       "soapy",
       "suspenseful"
@@ -265,7 +265,7 @@ export const myList = [
   },
   {
     title: "On My Block",
-    img:"/../public/on-my-block.jpeg",
+    img:"/on-my-block.jpeg",
     genres: [
       "Witty",
       "Emotional",
@@ -288,7 +288,7 @@ export const myList = [
 export const popularOnNetflix = [
   {
     title: "Narcos",
-    img:"/../public/narcos.jpeg",
+    img:"/narcos.jpeg",
     genres: [
       "Gritty",
       "Dark",
@@ -306,7 +306,7 @@ export const popularOnNetflix = [
   },
   {
     title: "First Kill",
-    img:"/../public/first-kill.jpeg",
+    img:"/first-kill.jpeg",
     genres: [
       "soapy",
       "suspenseful"
@@ -323,7 +323,7 @@ export const popularOnNetflix = [
   },
   {
     title: "On My Block",
-    img:"/../public/on-my-block.jpeg",
+    img:"/on-my-block.jpeg",
     genres: [
       "Witty",
       "Emotional",
@@ -342,7 +342,7 @@ export const popularOnNetflix = [
   },
   {
     title: "Control Z",
-    img:"/../public/control-z.jpeg",
+    img:"/control-z.jpeg",
     genres: [
       "Soapy",
       "Teen",
@@ -360,7 +360,7 @@ export const popularOnNetflix = [
   },
   {
     title: "Chilling Adventures of Sabrina",
-    img:"/../public/sabrina.jpeg",
+    img:"/sabrina.jpeg",
     genres: [
       "Slick",
       "Chilling",
@@ -379,7 +379,7 @@ export const popularOnNetflix = [
   },
   {
     title: "Never Have I Ever",
-    img:"/../public/never-have-i-ever.jpeg",
+    img:"/never-have-i-ever.jpeg",
     genres: [
       "Quirky",
       "Feel-Good"
@@ -400,7 +400,7 @@ export const popularOnNetflix = [
 export const tvShowsTrendingNow = [
   {
     title: "Bojack Horseman",
-    img:"../public/bojack-horseman.jpeg",
+    img:"/bojack-horseman.jpeg",
     genres: [
       "Sitcom",
       "TV Comedies"
@@ -417,7 +417,7 @@ export const tvShowsTrendingNow = [
   },
   {
     title:"Inside Job",
-    img: "/../public/inside-job.jpeg",
+    img: "/inside-job.jpeg",
     genres: [
       "Witty",
       "Adult Cartoon"
@@ -433,7 +433,7 @@ export const tvShowsTrendingNow = [
   },
   {
     title: "Stranger Things",
-    img:"/../public/stranger-things.jpeg",
+    img:"/stranger-things.jpeg",
     genres: [
       "Ominous",
       "Nostalgic"
@@ -451,7 +451,7 @@ export const tvShowsTrendingNow = [
   },
   {
     title: "The Umbrella Academy",
-    img:"/../public/umbrella-academy.jpeg",
+    img:"/umbrella-academy.jpeg",
     genres: [
       "Superhero",
       "Offbeat"
@@ -469,7 +469,7 @@ export const tvShowsTrendingNow = [
   },
   {
     title: "Supernatural",
-    img:"/../public/supernatural.jpeg",
+    img:"/supernatural.jpeg",
     genres: [
       "Scary"
     ],
