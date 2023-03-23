@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Head from 'next/head';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import { Inter } from 'next/font/google'
 import { useState} from 'react';

@@ -1,12 +1,10 @@
 
 import Link from 'next/link';
 import { useState, useEffect, useRef} from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass,faBell } from '@fortawesome/free-solid-svg-icons'
-import { BsFillCaretDownFill } from "react-icons/bs";
-import { Turret_Road } from 'next/font/google';
 
+import { BsFillCaretDownFill } from "react-icons/bs";
+import { faMagnifyingGlass,faBell } from "react-icons/fa";
+import { Turret_Road } from 'next/font/google';
 
 export default function Navbar() {
   const [visiblity, setVisibility] = useState(false);
@@ -75,7 +73,7 @@ export default function Navbar() {
                     setVisibility(!visiblity)
                     )}>
 
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <faMagnifyingGlass />
                   </button>
             )}
                 
@@ -83,7 +81,7 @@ export default function Navbar() {
            
             <li>
               <button>
-                <FontAwesomeIcon icon={faBell} />
+                <faBell />
               </button>
             </li>
           </ul>
