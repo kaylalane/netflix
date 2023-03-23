@@ -10,7 +10,6 @@ export default function Tv() {
       <Navbar />
       <main className="main">
         <div className='featured-media'>
-          
 
           <div className='featured-info'>
 
