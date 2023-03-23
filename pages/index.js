@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Head from 'next/head'
-import Image from 'next/Image'
+import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import { Inter } from 'next/font/google'
 import { useState} from 'react';
@@ -32,7 +31,7 @@ export default function Home() {
 
               <div className='netflix-tag'>
 
-                <Image
+                <img
                   src={require('../media/netflix-logo-sm.png')}
                   alt="logo"
                   id="logo-sm"
