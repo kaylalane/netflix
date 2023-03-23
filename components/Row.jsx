@@ -1,5 +1,4 @@
 import { Tillana } from "next/font/google";
-import Image from "next/image"
 import { useState } from "react"
 import Item from "./Item";
 
