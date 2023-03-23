@@ -1,7 +1,7 @@
 export const Titles = [
   {
     title: "The Glory",
-    img: "/../the-glory.jpeg",
+    img: "/../media/the-glory.jpeg",
     genres: [
       "TV Drama",
       "Thriller"
