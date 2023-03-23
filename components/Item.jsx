@@ -11,7 +11,7 @@ export default function Item({title}) {
         
         <div className="item ">
           <Image
-            src={title.img}
+            src={require(title.img)}
             alt={title.title}
             width={itemWidth}
             height={itemHeight}
