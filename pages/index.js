@@ -21,7 +21,7 @@ export default function Signin() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
+      <nav className="p-8">
         <Link href="/" aria-label="Netflix" className="logo">
           Netflix
         </Link>
