@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+	grid-template-columns: repeat(4, 1fr); /* fr fractions */
+  align-items: start;
+	grid: 4%;
+  margin: 1rem 0;
+}
+
+.footer {
+  z-index: 0;
+  font-size: x-small;
+  padding: 2rem;
+}

@@ -1,260 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --border-radius: 5px;
   color: white;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+@layer base {
+  [data-nextjs-scroll-focus-boundary] {
+    display: contents;
+  }
 }
 
-html, body {
+* {
+  box-sizing: border-box;
+}
+.visually-hidden,
+.sr-only {
+  /* hides content except when viewed by screen readers */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+html,
+body {
   background-color: black;
   margin: 0;
   padding: 0;
   width: 100vw;
 }
 
-main {
-  min-height: 1000px;
-  position: relative;
-  z-index: 0;
+body {
+  overflow-x: hidden;
 }
 
-.page {
-  padding-top: 20px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  display: block;
-}
-
-a:hover, button:hover {
-  opacity: .5;
-}
-
-.flex {
+.flex-container {
   display: flex;
   gap: 1rem;
 }
 
-
-/** NAV **/
-nav {
-  position: fixed;
-  display: flex;
-  gap: 1.5rem;
-  height: 70px;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 3rem;
-  z-index: 1;
-  font-size: 8pt;
-
-  .navMenu {
-    display: flex;
-    width: 100%;
-  }
- 
-  ul {
-    display: flex;
-    gap: 2rem;
-    padding: 0;
-    align-items: center;
-    visibility: visible;
-    width: 100%;
-    margin: 0;
-    list-style-type: none;
-  }
-
-
-  a:hover {
-    opacity: .5;
-  }
- 
-  button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    height: 100%;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    gap: .25rem;
-  }
-
-  input {
-    background-color: black;
-    border: white solid 1px;
-    color: white;
-  }
-
-  .logo {
-    color: #e50914;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-right: 5px;
-    text-transform: uppercase;
-  }
-
-  .primary-navigation {
-    display: flex;
-    width: 100%;
-  }
-
-  .secondary-navigation {
-    display: flex;
-    gap: 1rem;
-    float: right;
-    justify-content: flex-end;
-    flex-basis: 10%;
-  }
-
-}
-
-
-#search {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 512 512"%3E%3C!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/%3E%3C/svg%3E');
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 15px;
-  padding: 10px 15px 10px 20px;
-  transform: 3s;
-
-  &:focus {
-    border: none;
-  }
-}
-
-@keyframes slide-out{
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-.active {
-  font-weight: bold;
-}
-
-.featured-media {
-  top:0;
-  left:0;
-  position: relative;
-  color: white;
-
-  .featured-info {
-    position: absolute;
-    top: 40%;
-    left: 4%;
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    width: 40vw;
-    color: white;
-
-    button {
-      display: flex;
-      gap: .3rem;
-      padding: 5px;
-      margin-top: 10px;
-      width: 120px;
-      justify-content: center;
-      align-items: center;
-      font-weight: 900; 
-      font-size: clamp(9px, 2vw, 14px);
-      border: none;
-      border-radius: var(--border-radius);
-    }
-    
-    #play-button {
-      background-color: white;
-      color: black;
-    }
-
-    #info-button {
-      background-color: rgba(71, 70, 70, 0.763);
-      color: white;
-    }
-
-    .netflix-tag {
-      display:flex;
-      align-items: center;
-
-      text-transform: uppercase;
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 12pt;
-      font-weight: 900;
-      letter-spacing: .2rem;
-    }
-    #logo-sm {
-      padding-left: 3px;
-      padding-right: 10px;
-      max-width: 20px;
-    }
-
-
-    & > .title {
-      z-index: 1;
-      padding: 0;
-      margin: 0;
-
-      text-transform: uppercase;
-      font-size: 4vw;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-
-    & > .description {
-      padding-left: 3px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: clamp(9px, 2vw, 14px);
-
-      z-index: 1;
-      color: white;
-    }
-
-  }
-
-  #featured-image {
-    width: 100vw;
-    height: auto;
-    
-  }
-
-  img {
-    width: 100%;
-  }
-
-  .fade {
-    background-image: linear-gradient(to top, rgba(0,0,0,255), rgba(239,239,239,0));
-    position: absolute;
-    height: 100px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-}
-
-.container {
+.slider-container {
+  padding-left: 2rem;
   margin: 3vw 0;
-  
   z-index: 0;
-  flex-flow: row wrap;
+
   h2 {
-    padding-left: 2rem;
-    margin: 0;
-    padding: 1% 4%;
     font-size: 16pt;
   }
 }
@@ -264,43 +61,37 @@ nav {
   padding: 0;
   height: fit-content;
   width: 100vw;
-
-  display: flex;
-  flex-flow: column;
-
 }
 
 .media-group {
   margin: 0;
   padding: 0 4%;
   display: flex;
-  gap: .25rem;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
   max-width: 1000px;
   height: 150px;
-  overflow-y: visible;
 
   position: relative;
 
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
-
 
 .media-group::-webkit-scrollbar {
   display: none;
 }
 
 .item-group {
-  
   img {
-    min-width: 250px;
-    min-height: 150px;
     border-radius: var(--border-radius);
   }
 }
 
-.item, .details, .item-group {
-  transition: all .1s .1s ease-in-out ;
+.item,
+.details,
+.item-group {
+  transition: all 0.2s 0.1s ease-in;
 }
 
 .row:hover {
@@ -314,12 +105,13 @@ nav {
 
 .details {
   visibility: hidden;
+  z-index: 5;
 }
 
 .item-group:hover .details {
   visibility: visible;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 
   transform: translateY(-25%) scale(1.2);
 }
@@ -328,6 +120,7 @@ h2 {
   margin: 0;
   padding: 0;
 }
+
 .slider-button {
   position: absolute;
   z-index: 2;
@@ -335,12 +128,11 @@ h2 {
   width: 50px;
   height: 150px;
 
-  background-color: rgba(71, 70, 70, 0.316);
+   background-color: rgb(0, 0, 0, .5);
 }
 
 .left {
   top: 0;
-  left: 4vw;
 }
 
 .right {
@@ -348,29 +140,39 @@ h2 {
   right: 0;
 }
 
-footer {
-  text-align: center;
-}
-
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
 
-
 @media (min-width: 850px) {
-
   nav li:last-child {
     float: right;
   }
   .featured-info .description {
     font-size: 9pt;
   }
-
 }
 
 @media (max-width: 576px) {
- 
+  #featured-image {
+    width: fit-content;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    /* turns off smooth-scrolling behavior (if turned on) when prefers-reduced-motion is active*/
+    scroll-behavior: auto;
+  }
+
+  *:not(.animates-without-motion),
+  *:not(.animates-without-motion)::before,
+  *:not(.animates-without-motion)::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

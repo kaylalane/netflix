@@ -1,0 +1,104 @@
+.featuredMedia {
+  top: 0;
+  left: 0;
+  position: relative;
+  color: white;
+  
+  .fade {
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 255),
+      rgba(239, 239, 239, 0)
+    );
+    position: absolute;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  #featured-image {
+    width: 100vw;
+    height: auto;
+  }
+  img {
+    width: 100%;
+  }
+  
+}
+
+.featuredInfo {
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  width: 40vw;
+  color: white;
+  button {
+    display: flex;
+    gap: 0.3rem;
+    padding: 5px;
+    margin-top: 10px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: clamp(9px, 2vw, 14px);
+    border: none;
+    border-radius: var(--border-radius);
+  }
+
+
+
+ 
+}
+
+.title {
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+
+  text-transform: uppercase;
+  font-size: clamp(14px, 30px, 40px);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  padding-left: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(9px, 2vw, 14px);
+
+  z-index: 1;
+  color: white;
+}
+
+
+.netflixTag {
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12pt;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+.logoSm {
+  padding-left: 3px;
+  padding-right: 10px;
+  max-width: 20px;
+}
+
+
+.playButton {
+  background-color: white;
+  color: black;
+}
+
+.infoButton {
+  background-color: rgba(71, 70, 70, 0.763);
+  color: white;
+}

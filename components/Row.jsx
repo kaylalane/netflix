@@ -1,59 +1,69 @@
-import { Tillana } from "next/font/google";
-import { useState } from "react"
+import { useEffect, useState } from "react";
 import Item from "./Item";
+import { allShows } from "./Data";
+import getRandomTitles from "./GetRandomItem";
 
-
-export default function Row({titles, rowTitle}) {
-  //set current index
+export default function Row({ allTitles, rowTitle, random }) {
   const [index, setIndex] = useState(0);
-  const titlesLength = titles.length;
-  const currentlyShowing = titles.slice(index, (index+4));
+  const [titles, setTitles] = useState(allTitles);
+  let [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    if (random) {
+      setTitles(getRandomTitles(allTitles, 10));
+    }
+  }, [allTitles, currentlyShowing, random, index]);
 
-  //have index shift with every press of button
+  var currentlyShowing = titles.slice(index, index + 6);
+
   function prev() {
-    if(titles[index-1] !=null) {
-      setIndex(index-1);
+    if (titles[index - 1] != null) {
+      setIndex(index - 1);
     }
   }
 
-  function next(){
-    if (titles[index+4] !=null) {
-      setIndex(index+1);
+  function next() {
+    if (titles[index + 1] != null) {
+      setIndex(index + 1);
     }
   }
-
-  //put sliders on end
-
-  //1st problem: make it slide through titles
-  //2nd problem: make a cycle though (there's a kind of linked list)
 
   return (
-    <div className="container">
-    <h2>{rowTitle}</h2>
-     <div className="row">
-     
-      {index!=0 && <button
-          className="slider-button left"
-          onClick={prev}
+    <div className="slider-container">
+      <h2>{rowTitle}</h2>
+      <div className="relative">
+
+        <div className="relative h-fit">
+          <div className="flex flex-2 gap-2 m-0 h-[150px] overflow-visible">
+            {currentlyShowing.map((title) => (
+              <Item
+                title={title}
+                key={title.title}
+                onShow={() => setIsOpen(true)}
+              />
+            ))}
+          </div>
+        </div>
+        
+        {index != 0 && (
+          <button
+            aria-label="Previous"
+            className="absolute top-0 z-50 w-[50px] h-[150px] text-2xl"
+            onClick={prev}
           >
-          &#10094;
+            &#10094;
           </button>
-      }
+        )}
 
-      { index+4!=(titlesLength) && <button
-        className="slider-button right"
-        onClick={next}
-      >
-        &#10095;
-      </button>
-      }
-
-      <div className="media-group">
-        {currentlyShowing.map((t) => (
-          <Item title={t} key={t}/>
-        ))}
+        {index + 1 != null && (
+          <button
+            aria-label="Next"
+            className="absolute top-0 right-0 z-50 w-[50px] h-[150px] text-2xl"
+            onClick={next}
+          >
+            &#10095;
+          </button>
+        )}
       </div>
-     </div>
     </div>
-  )
+  );
 }
