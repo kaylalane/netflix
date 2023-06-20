@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layout/Navbar";
 import Image from "next/image";
 import Row from "@/components/Row";
 import { allMovies, myList } from "@/components/Data";
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/Footer";
 import styles from "@/styles/feature.module.scss";
 
 export default function Movies() {
@@ -99,17 +99,21 @@ export default function Movies() {
             />
           </div>
         </div>
-        <Row allTitles={myMoviesList} rowTitle={"My List"} topic="" />
         <Row
-          allTitles={comedies}
-          rowTitle={"Feel-Good Comedies"}
-          topic="My List"
+          currentTitles={myMoviesList}
+          rowTitle={"My List"}
+          isRandomTitles={false}
         />
-        <Row allTitles={dramaMovies} rowTitle={"Dramas"} topic="" />
         <Row
-          allTitles={familyMovies}
+          currentTitles={comedies}
+          rowTitle={"Feel-Good Comedies"}
+          isRandomTitles={false}
+        />
+        <Row allTitles={dramaMovies} rowTitle={"Dramas"} isRandomTitles={false} />
+        <Row
+          currentTitles={familyMovies}
           rowTitle={"Family Movies"}
-          topic="My List"
+          isRandomTitles={false}
         />
         <Footer />
       </main>

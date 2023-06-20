@@ -1,29 +1,34 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
-import { allShows } from "./Data";
 import getRandomTitles from "./GetRandomItem";
 
-export default function Row({ allTitles, rowTitle, random }) {
-  const [index, setIndex] = useState(0);
-  const [titles, setTitles] = useState(allTitles);
+export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
+  const [currentTitlesPosition, setCurrentTitlesPosition] = useState(0);
+  const [titles, setTitles] = useState(currentTitles);
   let [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    if (random) {
-      setTitles(getRandomTitles(allTitles, 10));
-    }
-  }, [allTitles, currentlyShowing, random, index]);
 
-  var currentlyShowing = titles.slice(index, index + 6);
+  useEffect(() => {
+    if (isRandomTitles) {
+      setTitles(getRandomTitles(currentTitles, 10));
+    }
+  }, [currentTitles, currentlyShowing, isRandomTitles, currentTitlesPosition]);
+  var currentlyShowing = [];
+  if (titles) {
+    currentlyShowing = titles.slice(
+      currentTitlesPosition,
+      currentTitlesPosition + 6
+    );
+  }
 
   function prev() {
-    if (titles[index - 1] != null) {
-      setIndex(index - 1);
+    if (titles[currentTitlesPosition - 1] != null) {
+      setCurrentTitlesPosition(currentTitlesPosition - 1);
     }
   }
 
   function next() {
-    if (titles[index + 1] != null) {
-      setIndex(index + 1);
+    if (titles[currentTitlesPosition + 1] != null) {
+      setCurrentTitlesPosition(currentTitlesPosition + 1);
     }
   }
 
@@ -31,7 +36,6 @@ export default function Row({ allTitles, rowTitle, random }) {
     <div className="slider-container">
       <h2>{rowTitle}</h2>
       <div className="relative">
-
         <div className="relative h-fit">
           <div className="flex flex-2 gap-2 m-0 h-[150px] overflow-visible">
             {currentlyShowing.map((title) => (
@@ -43,8 +47,8 @@ export default function Row({ allTitles, rowTitle, random }) {
             ))}
           </div>
         </div>
-        
-        {index != 0 && (
+
+        {currentTitlesPosition != 0 && (
           <button
             aria-label="Previous"
             className="absolute top-0 z-50 w-[50px] h-[150px] text-2xl"
@@ -54,7 +58,7 @@ export default function Row({ allTitles, rowTitle, random }) {
           </button>
         )}
 
-        {index + 1 != null && (
+        {currentTitlesPosition + 1 != null && (
           <button
             aria-label="Next"
             className="absolute top-0 right-0 z-50 w-[50px] h-[150px] text-2xl"

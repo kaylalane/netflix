@@ -1,7 +1,7 @@
 import { myList } from "./Data";
 
 function getMyList () {
-  return myList;
+  return myList.reverse();
 };
 
 export default getMyList;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-import Navlink from './Navlink'
-import styles from 'styles/navbar.module.scss'
+import Navlink from "./Navlink";
+import styles from "styles/navbar.module.scss";
 
 const Navbar = () => {
   const [visiblity, setVisibility] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
   const [search, setSearch] = useState("");
   const ref = useRef();
   const ham = useRef();
-  
+
   function handleClick() {
     setHamburger(!hamburger);
   }
@@ -38,22 +38,22 @@ const Navbar = () => {
   const links = [
     {
       label: "Home",
-      link: "/browse"
-    }, 
+      link: "/browse",
+    },
     {
       label: "TV Shows",
-      link: "/tv-shows"
-    }, 
+      link: "/tv-shows",
+    },
     {
       label: "Movies",
-      link: "/movies"
+      link: "/movies",
     },
     {
       label: "My List",
-      link: "/my-list"
-    }
-  ]
-  
+      link: "/my-list",
+    },
+  ];
+
   return (
     <div className={styles.navbar}>
       <Link href="/browse" aria-label="Netflix" className={styles.logo}>
@@ -62,7 +62,7 @@ const Navbar = () => {
       <div className={styles.primaryNavigation}>
         <ul>
           {links.map((link) => (
-            <Navlink link={link} key={link.label}/>
+            <Navlink link={link} key={link.label} />
           ))}
         </ul>
       </div>
@@ -125,6 +125,6 @@ const Navbar = () => {
       </ul>
     </div>
   );
-}
+};
 
 export default Navbar;

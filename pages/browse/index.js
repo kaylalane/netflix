@@ -1,28 +1,21 @@
 /* eslint-disable no-unused-vars */
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
-import Layout from "@/components/layout";
-import {
-  myList,
-  popularOnNetflix,
-  allShows,
-  allMovies,
-} from "@/components/Data";
+import Layout from "@/components/layout/layout";
+import { myList, allShows, allMovies } from "@/components/Data";
+import { animatedTVShows } from "@/lib/data";
 import Row from "@/components/Row";
 import getRandomTitles from "@/components/GetRandomItem";
 import styles from "@/styles/feature.module.scss";
 import getMyList from "@/components/getMyList";
 
 export default function Home() {
-  const [displyMyList, setDisplayMyList] = useState(getMyList());
   const allTitles = [...allMovies, ...allShows];
   const [featuredMedia, setFeaturedMedia] = useState(allShows);
   useEffect(() => {
     setFeaturedMedia(getRandomTitles(allShows, 1));
   }, []);
-  const k = getMyList();
 
   const spanishShows = allTitles.filter((show) =>
     show.language.includes("spanish")
@@ -45,6 +38,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div id="portal"></div>
       <div className={styles.featuredMedia}>
         <div className={styles.featuredInfo}>
           <div className={styles.netflixTag}>
@@ -116,17 +110,21 @@ export default function Home() {
           height={720}
         />
       </div>
-      <Row allTitles={myList} rowTitle={"My List"} random={false} />
+      <Row currentTitles={myList} rowTitle={"My List"} isRandomTitles={false} />
       <Row
-        allTitles={allTitles}
+        currentTitles={allTitles}
         rowTitle={"Popular on Netflix"}
-        random={true}
+        isRandomTitles={true}
       />
-      <Row allTitles={koreanShows} rowTitle={"Korean Movies & TV Shows"} />
       <Row
-        allTitles={spanishShows}
+        currentTitles={koreanShows}
+        rowTitle={"Korean Movies & TV Shows"}
+        isRandomTitles={false}
+      />
+      <Row
+        currentTitles={spanishShows}
         rowTitle={"Spanish Movies & TV Shows"}
-        random={false}
+        isRandomTitles={false}
       />
     </>
   );

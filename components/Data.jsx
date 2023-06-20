@@ -1,61 +1,39 @@
 export const allShows = [
   {
     title: "Disenchantment",
-    img:"/disenchantment.jpeg",
-    banner:"/disenchantment-banner.jpeg",
-    genres: [
-      "Adult Animation",
-      "TV Comedies",
-      "Fantasy TV Shows"
-    ],
-    tone:[
-      "Witty",
-      "Irreverent"
-    ],
-    media:"show",
+    img: "/disenchantment.jpeg",
+    banner: "/disenchantment-banner.jpeg",
+    genres: ["Adult Animation", "TV Comedies", "Fantasy TV Shows"],
+    tone: ["Witty", "Irreverent"],
+    media: "show",
     year: "2022",
-    rating:"",
-    seasons:"4",
-    language:"english",
-    cast:[
-      "Abbi Jacobson",
-      "Eric André",
-      "Nat Faxon"
-    ],
-    description:"It follows the misadventures of hard-drinking young princess Bean, her feisty elf companion Elfo and personal demon Luci. The oddball trio encounters the likes of ogres, sprites, imps, trolls and human fools along the way."
+    rating: "",
+    seasons: "4",
+    language: "english",
+    cast: ["Abbi Jacobson", "Eric André", "Nat Faxon"],
+    description:
+      "It follows the misadventures of hard-drinking young princess Bean, her feisty elf companion Elfo and personal demon Luci. The oddball trio encounters the likes of ogres, sprites, imps, trolls and human fools along the way.",
   },
   {
     title: "Castlevania",
-    img:"/castlevania.jpeg",
-    banner:"/castlevania-banner.jpeg",
-    genres: [
-      "Action Anime",
-      "Anime based on a Video Game",
-      "Anime Series"
-    ],
-    tone: [
-      "Violent",
-      "Scary"
-    ],
-    media:"show",
+    img: "/castlevania.jpeg",
+    banner: "/castlevania-banner.jpeg",
+    genres: ["Action Anime", "Anime based on a Video Game", "Anime Series"],
+    tone: ["Violent", "Scary"],
+    media: "show",
     year: "2021",
-    rating:"TV-MA",
-    seasons:"4",
-    language:"english",
-    cast:[
-      "Richard Armitage",
-      "James Callis",
-      "Alejandra Reynoso"
-    ],
-    description:"As Dracula and his legion of vampires prepare to rid the world of humanity's stain, Trevor Belmont is no longer alone, and he and his misfit comrades race to find a way to save mankind from the grief-maddened Dracula."
+    rating: "TV-MA",
+    seasons: "4",
+    language: "english",
+    cast: ["Richard Armitage", "James Callis", "Alejandra Reynoso"],
+    description:
+      "As Dracula and his legion of vampires prepare to rid the world of humanity's stain, Trevor Belmont is no longer alone, and he and his misfit comrades race to find a way to save mankind from the grief-maddened Dracula.",
   },
 
   {
     title: "The Glory",
     genres: ["TV Drama", "Thriller"],
-    tone: [
-      "Dark"
-    ],
+    tone: ["Dark"],
     img: "/the-glory.jpeg",
     banner: "/the-glory-banner.webp",
     media: "show",
@@ -64,23 +42,23 @@ export const allShows = [
     seasons: "1",
     language: "korean",
     cast: ["Song Hye-kyo", "Lim Ji-yeon", "Lee Do-hyun", "Jung Sung II"],
-    description: "A young woman, bullied to the point of deciding to drop out of school, plans the best way to get revenge. After becoming a primary school teacher, she takes in the son of the man who tormented her the most to enact her vengeance."
+    description:
+      "A young woman, bullied to the point of deciding to drop out of school, plans the best way to get revenge. After becoming a primary school teacher, she takes in the son of the man who tormented her the most to enact her vengeance.",
   },
   {
     title: "My Liberation Notes",
     img: "/my-liberation-notes.jpeg",
     banner: "/my-liberation-notes-banner.jpeg",
     genres: ["Korean", "TV Dramas"],
-    tone: [
-      "Understated"
-    ],
+    tone: ["Understated"],
     media: "show",
     year: "2022",
     rating: "TV-MA",
     seasons: "1",
     language: "korean",
     cast: ["Lee Min-ki", "Kim Ji-won", "Son Suk-ku"],
-    description: "Three siblings, exhausted by the monotony of day-to-day adulthood, seek to find fulfillment and freedom from their humdrum lives."
+    description:
+      "Three siblings, exhausted by the monotony of day-to-day adulthood, seek to find fulfillment and freedom from their humdrum lives.",
   },
   {
     title: "Wednesday",
@@ -93,16 +71,14 @@ export const allShows = [
     seasons: "1",
     language: "english",
     cast: ["Jenna Ortega", "Gwendoline Christie", "Riki Lindhome"],
-    description: "While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago."
+    description:
+      "While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.",
   },
   {
     title: "The Disastrous Life of Saiki K.",
     img: "/saiki.jpeg",
     banner: "/saiki-banner.jpeg",
-    genres:[ 
-      "Shounen Anime",
-      "Japanese Anime Series"
-    ],
+    genres: ["Shounen Anime", "Japanese Anime Series"],
     tone: ["Deadpan", "Absurd", "Offbeat"],
     media: "show",
     year: "2018",
@@ -110,7 +86,8 @@ export const allShows = [
     seasons: "3",
     language: "japanese",
     cast: ["Hiroshi Kamiya"],
-    description: "A high school student with powerful psychic abilities tries to live an ordinary life by keeping his true nature a secret from his many quirky classmates and anyone else he comes across."
+    description:
+      "A high school student with powerful psychic abilities tries to live an ordinary life by keeping his true nature a secret from his many quirky classmates and anyone else he comes across.",
   },
   {
     title: "Inside Job",
@@ -123,7 +100,8 @@ export const allShows = [
     seasons: "1",
     language: "english",
     cast: ["Lizzie Caplan"],
-    description: "Anti-social genius Reagan Ridley and her dysfunctional team work to hide the world's conspiracies."
+    description:
+      "Anti-social genius Reagan Ridley and her dysfunctional team work to hide the world's conspiracies.",
   },
   {
     title: "Alice in Borderland",
@@ -136,17 +114,14 @@ export const allShows = [
     seasons: "2",
     language: "japanese",
     cast: ["Kento Yamazaki"],
-    description: "Obsessed gamer Arisu suddenly finds himself in a strange, emptied-out version of Tokyo in which he and his friends must compete in dangerous games in order to survive."
+    description:
+      "Obsessed gamer Arisu suddenly finds himself in a strange, emptied-out version of Tokyo in which he and his friends must compete in dangerous games in order to survive.",
   },
   {
     title: "First Kill",
     img: "/first-kill.jpeg",
     banner: "/first-kill-banner.webp",
-    genres: [
-      "Romantic TV Dramas",
-      "TV Dramas",
-      "TV Shows Based on Books"
-    ],
+    genres: ["Romantic TV Dramas", "TV Dramas", "TV Shows Based on Books"],
     tone: ["soapy", "suspenseful"],
     media: "show",
     year: "2022",
@@ -154,17 +129,14 @@ export const allShows = [
     seasons: "1",
     language: "english",
     cast: ["Sarah Catherine Hook", "Imani Lewis"],
-    description: "Falling in love is tricky for teens Juliette and Calliope because one's a vampire and the other's a vampire hunter -- and both are ready to make their first kill."
+    description:
+      "Falling in love is tricky for teens Juliette and Calliope because one's a vampire and the other's a vampire hunter -- and both are ready to make their first kill.",
   },
   {
     title: "On My Block",
     img: "/on-my-block.jpeg",
     banner: "/on-my-block-banner.jpeg",
-    genres: [
-      "Romantic TV Dramas",
-      "TV Dramas",
-      "Teen TV Shows"
-    ],
+    genres: ["Romantic TV Dramas", "TV Dramas", "Teen TV Shows"],
     tone: ["Witty", "Emotional", "Teen"],
     media: "show",
     year: "2021",
@@ -172,25 +144,23 @@ export const allShows = [
     seasons: "4",
     language: "english",
     cast: ["Sierra Capri", "Jason Genao", "Brett Gray"],
-    description: "Lifelong friendships are tested as Monse, Ruby, Jamal and Cesar confront the challenges of adolescence and life in their predominantly Hispanic and black neighborhood in South Central Los Angeles in this coming-of-age comedy series."
+    description:
+      "Lifelong friendships are tested as Monse, Ruby, Jamal and Cesar confront the challenges of adolescence and life in their predominantly Hispanic and black neighborhood in South Central Los Angeles in this coming-of-age comedy series.",
   },
   {
     title: "Control Z",
     img: "/control-z.jpeg",
     banner: "/control-z-banner.jpeg",
     genres: ["Soapy", "Teen", "Ensemble"],
-    tone:[
-      "Soapy",
-      "Teen",
-      "Ensemble"
-    ],
+    tone: ["Soapy", "Teen", "Ensemble"],
     media: "show",
     year: "2022",
     rating: "TV-MA",
     seasons: "3",
     language: "spanish",
     cast: ["Ana Valeria Becerril", "Michael Ronda"],
-    description: "When a hacker begins releasing students' secrets to the entire high school, the socially isolated but observant Sofía works to uncover the hacker's identity."
+    description:
+      "When a hacker begins releasing students' secrets to the entire high school, the socially isolated but observant Sofía works to uncover the hacker's identity.",
   },
   {
     title: "Chilling Adventures of Sabrina",
@@ -203,7 +173,8 @@ export const allShows = [
     seasons: "4",
     language: "english",
     cast: ["Kiernan Shipka", "Ross Lynch", "Miranda Otto"],
-    description: " In the reimagined origin story, Sabrina Spellman wrestles to reconcile her dual nature -- half-witch, half-mortal -- while standing against the evil forces that threaten her, her family -- including aunts Hilda and Zelda -- and the daylight world humans inhabit."
+    description:
+      " In the reimagined origin story, Sabrina Spellman wrestles to reconcile her dual nature -- half-witch, half-mortal -- while standing against the evil forces that threaten her, her family -- including aunts Hilda and Zelda -- and the daylight world humans inhabit.",
   },
   {
     title: "Never Have I Ever",
@@ -216,7 +187,8 @@ export const allShows = [
     seasons: "3",
     language: "english",
     cast: ["Maitreyi Ramakrishnan", "Poorna Jagannathan"],
-    description: "After a traumatic year, a first-generation Indian-American teenager wants to improve her status at school, but friends, family, and feelings don't make it easy on her."
+    description:
+      "After a traumatic year, a first-generation Indian-American teenager wants to improve her status at school, but friends, family, and feelings don't make it easy on her.",
   },
   {
     title: "Bojack Horseman",
@@ -229,7 +201,8 @@ export const allShows = [
     seasons: "6",
     language: "english",
     cast: ["Will Arnett", "Aaron Paul"],
-    description: "A humanoid horse, BoJack Horseman -- lost in a sea of self-loathing and booze -- decides it's time for a comeback."
+    description:
+      "A humanoid horse, BoJack Horseman -- lost in a sea of self-loathing and booze -- decides it's time for a comeback.",
   },
   {
     title: "Stranger Things",
@@ -265,716 +238,447 @@ export const allShows = [
     seasons: "15",
     language: "english",
     cast: ["Jared Padalecki", "Jensen Ackles", "Mark Sheppard"],
-    description: "This haunting series follows the thrilling yet terrifying journeys of Sam and Dean Winchester, two brothers who face an increasingly sinister landscape as they hunt monsters."
+    description:
+      "This haunting series follows the thrilling yet terrifying journeys of Sam and Dean Winchester, two brothers who face an increasingly sinister landscape as they hunt monsters.",
   },
   {
     title: "Red Rose",
-    img:"/red-rose.jpeg",
-    banner:"/red-rose-banner.jpeg",
-    genres: [
-      "TV Dramas",
-      "British",
-      "Teen TV Shows"
-    ],
-    media:"show",
+    img: "/red-rose.jpeg",
+    banner: "/red-rose-banner.jpeg",
+    genres: ["TV Dramas", "British", "Teen TV Shows"],
+    media: "show",
     year: "2023",
-    rating:"TV-MA",
-    seasons:"1",
-    episodes:"8",
-    language:"english",
-    cast:[
-      "Amelia Clarkson",
-      "Isis Hainesworth",
-      "Natalie Blair"
-    ],
-    description:"An original horror series exploring the relationship between teenagers and their online lives. A sense of danger looms over the protagonists, and whether real or imagined, the dark web or something supernatural, with a story of friendship that emerges through the convention of classic horror."
+    rating: "TV-MA",
+    seasons: "1",
+    episodes: "8",
+    language: "english",
+    cast: ["Amelia Clarkson", "Isis Hainesworth", "Natalie Blair"],
+    description:
+      "An original horror series exploring the relationship between teenagers and their online lives. A sense of danger looms over the protagonists, and whether real or imagined, the dark web or something supernatural, with a story of friendship that emerges through the convention of classic horror.",
   },
   {
     title: "Elite",
-    img:"/elite.jpeg",
+    img: "/elite.jpeg",
     banner: "/elite-banner.webp",
-    genres: [
-      "TV Dramas",
-      "Spanish",
-      "Teen TV Shows"
-    ],
-    tone:[
-      "Soapy",
-      "Teen",
-      "Suspenseful"
-    ],
-    media:"show",
+    genres: ["TV Dramas", "Spanish", "Teen TV Shows"],
+    tone: ["Soapy", "Teen", "Suspenseful"],
+    media: "show",
     year: "2022",
-    rating:"TV-MA",
-    seasons:"6",
-    language:"spanish",
-    cast:[
-      "Itzan Escamilla",
-      "Miguel Bernardeau",
-      "Danna Paola"
-    ],
-    description:"When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder."
+    rating: "TV-MA",
+    seasons: "6",
+    language: "spanish",
+    cast: ["Itzan Escamilla", "Miguel Bernardeau", "Danna Paola"],
+    description:
+      "When three working-class teens enroll in an exclusive private school in Spain, the clash between them and the wealthy students leads to murder.",
   },
   {
     title: "Diablero",
-    img:"/diablero.jpeg",
+    img: "/diablero.jpeg",
     banner: "/diablero-banner.jpg",
-    genres: [
-      "Mexican",
-      "TV Shows Based on Books",
-      "TV Thrillers"
-    ],
-    tone: [
-      "Scary",
-      "Horror",
-      "Irreverent"
-    ],
-    media:"show",
+    genres: ["Mexican", "TV Shows Based on Books", "TV Thrillers"],
+    tone: ["Scary", "Horror", "Irreverent"],
+    media: "show",
     year: "2020",
-    rating:"TV-MA",
-    seasons:"2",
-    language:"spanish",
-    cast:[
+    rating: "TV-MA",
+    seasons: "2",
+    language: "spanish",
+    cast: [
       "Christopher Von Uckermann",
       "Horacio García Rojas",
-      "Gisselle Kuri"
+      "Gisselle Kuri",
     ],
-    description:"A young priest enlists the help of a demon hunter and a paranormal expert to search for a kidnapped girl in the underworld of Mexico City."
+    description:
+      "A young priest enlists the help of a demon hunter and a paranormal expert to search for a kidnapped girl in the underworld of Mexico City.",
   },
   {
     title: "Warrior Nun",
-    img:"/warrior-nun.jpeg",
-    banner:"/warrior-nun-banner.avif",
-    genres: [
-      "Teen TV Shows",
-      "Fantasy TV Shows",
-      "TV Shows Based on Comics"
-    ],
-    media:"show",
+    img: "/warrior-nun.jpeg",
+    banner: "/warrior-nun-banner.avif",
+    genres: ["Teen TV Shows", "Fantasy TV Shows", "TV Shows Based on Comics"],
+    media: "show",
     year: "2022",
-    rating:"TV-MA",
-    seasons:"2",
-    language:"english",
-    cast:[
-      "Alba Baptista",
-      "Thekla Reuten",
-      "Lorena Andrea"
-    ],
-    description:"A young woman wakes up in a morgue with inexplicable powers and gets caught up in a battle between good and evil."
+    rating: "TV-MA",
+    seasons: "2",
+    language: "english",
+    cast: ["Alba Baptista", "Thekla Reuten", "Lorena Andrea"],
+    description:
+      "A young woman wakes up in a morgue with inexplicable powers and gets caught up in a battle between good and evil.",
   },
   {
     title: "Little Women",
-    img:"/little-women.jpeg",
-    banner:"/little-women-banner.webp",
-    genres: [
-     "TV Dramas",
-     "Korean",
-     "TV Mysteries"
-    ],
-    tone:[
-      "Suspenseful",
-      "Mystery",
-      "Ensemble"
-    ],
-    media:"show",
+    img: "/little-women.jpeg",
+    banner: "/little-women-banner.webp",
+    genres: ["TV Dramas", "Korean", "TV Mysteries"],
+    tone: ["Suspenseful", "Mystery", "Ensemble"],
+    media: "show",
     year: "2022",
-    rating:"TV-MA",
-    seasons:"1",
+    rating: "TV-MA",
+    seasons: "1",
     episodes: "12",
-    language:"korean",
-    cast:[
-      "Kim Go-eun",
-      "Nam Ji-hyun",
-      "Park Ji-hu"
-    ],
-    description:"Sisters become embroiled in a major incident and face off against the wealthiest family in the nation."
+    language: "korean",
+    cast: ["Kim Go-eun", "Nam Ji-hyun", "Park Ji-hu"],
+    description:
+      "Sisters become embroiled in a major incident and face off against the wealthiest family in the nation.",
   },
   {
     title: "The Magicians",
-    img:"/the-magicians.jpeg",
-    banner:"/the-magicians-banner.jpeg",
-    genres: [
-      "TV Based on Books",
-      "Fantasy TV Shows"
-    ],
-    media:"show",
+    img: "/the-magicians.jpeg",
+    banner: "/the-magicians-banner.jpeg",
+    genres: ["TV Based on Books", "Fantasy TV Shows"],
+    media: "show",
     year: "2020",
-    rating:"TV-MA",
-    seasons:"5",
-    language:"english",
-    cast:[
-      "Jason Ralph",
-      "Arjun Gupta",
-      "Hale Appleman"
-    ],
-    description:"Quentin Coldwater, a grad student at Brakebills College for Magical Pedagogy, has been fascinated by the magical fantasy world since he was young. But as he has gotten older, Quentin and his 20-something friends have discovered that the magical world they read about as children is not only real, but it poses dangers to humanity."
+    rating: "TV-MA",
+    seasons: "5",
+    language: "english",
+    cast: ["Jason Ralph", "Arjun Gupta", "Hale Appleman"],
+    description:
+      "Quentin Coldwater, a grad student at Brakebills College for Magical Pedagogy, has been fascinated by the magical fantasy world since he was young. But as he has gotten older, Quentin and his 20-something friends have discovered that the magical world they read about as children is not only real, but it poses dangers to humanity.",
   },
   {
     title: "Move to Heaven",
-    img:"/move-to-heaven.jpeg",
-    banner:"/move-to-heaven-banner.jpeg",
-    genres: [
-      "TV Dramas",
-      "Korean"
-    ],
-    tone: [
-      "Heartfelt",
-      "Emotional"
-    ],
-    media:"show",
+    img: "/move-to-heaven.jpeg",
+    banner: "/move-to-heaven-banner.jpeg",
+    genres: ["TV Dramas", "Korean"],
+    tone: ["Heartfelt", "Emotional"],
+    media: "show",
     year: "2021",
-    rating:"TV-MA",
-    seasons:"1",
+    rating: "TV-MA",
+    seasons: "1",
     episode: "10",
-    language:"korean",
-    cast:[
-      "Lee Je-hoon",
-      "Tang Jun-sang",
-      "Hong Seung-hee"
-    ],
-    description:"A young man with Asperger syndrome and his uncle work as trauma cleaners, clearing out the possessions of dead people, uncovering the stories they left behind and telling them to loved ones."
+    language: "korean",
+    cast: ["Lee Je-hoon", "Tang Jun-sang", "Hong Seung-hee"],
+    description:
+      "A young man with Asperger syndrome and his uncle work as trauma cleaners, clearing out the possessions of dead people, uncovering the stories they left behind and telling them to loved ones.",
   },
   {
     title: "You",
-    img:"/you.jpeg",
-    banner:"/you-banner.jpeg",
-    genres: [
-      "TV Dramas",
-      "TV Shows Based on Books",
-      "TV Thrillers"
-    ],
-    tone: [
-      "Dark"
-    ],
-    media:"show",
+    img: "/you.jpeg",
+    banner: "/you-banner.jpeg",
+    genres: ["TV Dramas", "TV Shows Based on Books", "TV Thrillers"],
+    tone: ["Dark"],
+    media: "show",
     year: "2023",
-    rating:"TV-MA",
-    seasons:"4",
-    language:"english",
-    cast:[
-      "Penn Badgley",
-      "Victoria Pedretti",
-      "Elizabeth Lail"
-    ],
-    description: "What would you do for love? For Joe, an intense young man who frequently becomes smitten with beautiful, smart women, this question is put to the test."
+    rating: "TV-MA",
+    seasons: "4",
+    language: "english",
+    cast: ["Penn Badgley", "Victoria Pedretti", "Elizabeth Lail"],
+    description:
+      "What would you do for love? For Joe, an intense young man who frequently becomes smitten with beautiful, smart women, this question is put to the test.",
   },
   {
     title: "The Girl in the Mirror",
-    img:"/the-girl-in-the-mirror.jpeg",
-    banner:"/the-girl-in-the-mirror-banner.jpeg",
-    genres: [
-      "TV Dramas",
-      "Spanish",
-      "Teen TV Shows"
-    ],
-    tone:[
-      "Mind-Bending",
-      "Suspenseful"
-    ],
-    media:"show",
+    img: "/the-girl-in-the-mirror.jpeg",
+    banner: "/the-girl-in-the-mirror-banner.jpeg",
+    genres: ["TV Dramas", "Spanish", "Teen TV Shows"],
+    tone: ["Mind-Bending", "Suspenseful"],
+    media: "show",
     year: "2022",
-    rating:"TV-MA",
-    seasons:"1",
+    rating: "TV-MA",
+    seasons: "1",
     episodes: "9",
-    language:"spanish",
-    cast:[
-      "Mireia Oriol",
-      "Álex Villazán",
-      "Pol Monen"
-    ],
-    description:"After losing her memory in a bizarre accident that kills most of her classmates, Alma tries to unravel what happened that day and regain her identity."
+    language: "spanish",
+    cast: ["Mireia Oriol", "Álex Villazán", "Pol Monen"],
+    description:
+      "After losing her memory in a bizarre accident that kills most of her classmates, Alma tries to unravel what happened that day and regain her identity.",
   },
   {
     title: "Dead End: Paranormal Park",
-    img:"/dead-end.jpeg",
-    banner:"/dead-end-banner.webp",
-    genres: [
-      "Kids' TV",
-      "TV Comedies",
-      "TV Cartoons"
-    ],
-    tone:[
-      "Quirky",
-      "Heartfelt"
-    ],
-    media:"show",
+    img: "/dead-end.jpeg",
+    banner: "/dead-end-banner.webp",
+    genres: ["Kids' TV", "TV Comedies", "TV Cartoons"],
+    tone: ["Quirky", "Heartfelt"],
+    media: "show",
     year: "2022",
-    rating:"TV-Y7",
-    seasons:"2",
-    language:"english",
-    cast:[
-      "Zach Barack",
-      "Kody Kavitha",
-      "Emily Osment"
-    ],
-    description:"Two teenagers and a talking pug work together to fight demons in a haunted amusement park. The two slowly start to grow into themselves as they face zombies, game show hosts, witches, and crushes."
+    rating: "TV-Y7",
+    seasons: "2",
+    language: "english",
+    cast: ["Zach Barack", "Kody Kavitha", "Emily Osment"],
+    description:
+      "Two teenagers and a talking pug work together to fight demons in a haunted amusement park. The two slowly start to grow into themselves as they face zombies, game show hosts, witches, and crushes.",
   },
   {
     title: "Derry Girls",
-    img:"/derry-girls.jpeg",
+    img: "/derry-girls.jpeg",
     banner: "/derry-girls-banner.webp",
-    genres: [
-      "Sitcoms",
-      "British",
-      "Teen TV Shows"
-    ],
-    tone:[
-      "Witty",
-      "Quirky"
-    ],
-    media:"show",
+    genres: ["Sitcoms", "British", "Teen TV Shows"],
+    tone: ["Witty", "Quirky"],
+    media: "show",
     year: "2020",
-    rating:"TV-MA",
-    seasons:"3",
-    language:"english",
-    cast:[
-      "Saoirse-Monica Jackson",
-      "Nicola Coughlan",
-      "Louisa Harland"
-    ],
-    description:"Amidst the political conflict of nothern Ireland in the 1990s, five spirited students contend with the universal challenges of being a teenager."
+    rating: "TV-MA",
+    seasons: "3",
+    language: "english",
+    cast: ["Saoirse-Monica Jackson", "Nicola Coughlan", "Louisa Harland"],
+    description:
+      "Amidst the political conflict of nothern Ireland in the 1990s, five spirited students contend with the universal challenges of being a teenager.",
   },
   {
     title: "Inspector Koo",
-    img:"/inspector-koo.jpeg",
+    img: "/inspector-koo.jpeg",
     banner: "/inspector-koo-banner.jpeg",
-    genres: [
-      "Korean",
-      "TV Comedies",
-      "Crime TV Shows"
-    ],
-    tone:[
-      "Suspenseful"
-    ],
-    media:"show",
+    genres: ["Korean", "TV Comedies", "Crime TV Shows"],
+    tone: ["Suspenseful"],
+    media: "show",
     year: "2021",
-    rating:"TV-MA",
-    seasons:"1",
+    rating: "TV-MA",
+    seasons: "1",
     episodes: "12",
-    language:"korean",
-    cast:[
-      "Lee Young-ae",
-      "Kim Hye-jun",
-      "Kim Hae-sook"
-    ],
-    description:"A reclusive ex-cop reenters the game as an insurance investigator searching for clues in crime scenes perfectly staged by a serial killer."
+    language: "korean",
+    cast: ["Lee Young-ae", "Kim Hye-jun", "Kim Hae-sook"],
+    description:
+      "A reclusive ex-cop reenters the game as an insurance investigator searching for clues in crime scenes perfectly staged by a serial killer.",
   },
   {
     title: "The Haunting of Bly Manor",
-    img:"/haunting-of-bly-manor.jpeg",
-    banner:"/haunting-of-bly-manor-banner.jpeg",
-    genres: [
-      "TV Dramas",
-      "TV Shows Based on Books",
-      "TV Mysteries"
-    ],
-    tone:[
-      "Ominous",
-      "Scary",
-      "Dark"
-    ],
-    media:"show",
+    img: "/haunting-of-bly-manor.jpeg",
+    banner: "/haunting-of-bly-manor-banner.jpeg",
+    genres: ["TV Dramas", "TV Shows Based on Books", "TV Mysteries"],
+    tone: ["Ominous", "Scary", "Dark"],
+    media: "show",
     year: "2020",
-    rating:"TV-MA",
-    seasons:"1",
-    episodes:"9",
-    language:"english",
-    cast:[
-      "Victoria Pedretti",
-      "Oliver Jackson-Cohen",
-      "Henry Thomas"
-    ],
-    description:"A young governess arrives at Bly Manor and begins to see apparitions haunting the estate."
+    rating: "TV-MA",
+    seasons: "1",
+    episodes: "9",
+    language: "english",
+    cast: ["Victoria Pedretti", "Oliver Jackson-Cohen", "Henry Thomas"],
+    description:
+      "A young governess arrives at Bly Manor and begins to see apparitions haunting the estate.",
   },
   {
     title: "The Witcher",
-    img:"/the-witcher.jpeg",
+    img: "/the-witcher.jpeg",
     banner: "/the-witcher-banner.jpeg",
-    genres: [
-      "TV Dramas",
-      "TV Shows Based on Books"
-    ],
-    tone:[
-      "Exciting"
-    ],
-    media:"show",
+    genres: ["TV Dramas", "TV Shows Based on Books"],
+    tone: ["Exciting"],
+    media: "show",
     year: "2021",
-    rating:"TV-MA",
-    seasons:"2",
-    language:"english",
-    cast:[
-      "Henry Cavill",
-      "Anya Chalotra",
-      "Freya Allan"
-    ],
-    description:"The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts."
+    rating: "TV-MA",
+    seasons: "2",
+    language: "english",
+    cast: ["Henry Cavill", "Anya Chalotra", "Freya Allan"],
+    description:
+      "The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.",
   },
   {
     title: "Daybreak",
-    img:"/daybreak.jpeg",
+    img: "/daybreak.jpeg",
     banner: "/daybreak-banner.webp",
-    genres: [
-      "Teen TV Shows",
-      "Comedies",
-      "TV Horror"
-    ],
-    tone:[
-      "Offbeat",
-      "Irreverent",
-      "Exciting"
-    ],
+    genres: ["Teen TV Shows", "Comedies", "TV Horror"],
+    tone: ["Offbeat", "Irreverent", "Exciting"],
     media: "show",
     year: "2019",
-    rating:"TV-MA",
-    seasons:"1",
+    rating: "TV-MA",
+    seasons: "1",
     episodes: "10",
-    language:"english",
-    cast:[
-      "Colin Ford",
-      "Alyvia Alyn Lind",
-      "Sophie Simnett"
-    ],
-    description:"Navigating a post-apocalyptic world full of zombies and \"Mad Max\"-style gangs, a teenage outcast searches for his lost love."
+    language: "english",
+    cast: ["Colin Ford", "Alyvia Alyn Lind", "Sophie Simnett"],
+    description:
+      'Navigating a post-apocalyptic world full of zombies and "Mad Max"-style gangs, a teenage outcast searches for his lost love.',
   },
 ];
-
-
 
 export const tvTemplate = [
   {
     title: "",
-    img:"",
+    img: "",
     banner: "",
-    genres: [
-      ""
-    ],
-    tone:[
-      ""
-    ],
-    media:"",
+    genres: [""],
+    tone: [""],
+    media: "",
     year: "",
-    rating:"",
-    seasons:"",
-    language:"",
-    cast:[
-      "",
-      "",
-      ""
-    ],
-    description:""
+    rating: "",
+    seasons: "",
+    language: "",
+    cast: ["", "", ""],
+    description: "",
   },
 ];
 
-export const allMovies =
-[
+export const allMovies = [
   {
     title: "Unlocked",
-    img:"/unlocked.jpeg",
-    genres: [
-      "Korean",
-      "Thriller Movies",
-      "Mysteries"
-    ],
+    img: "/unlocked.jpeg",
+    genres: ["Korean", "Thriller Movies", "Mysteries"],
     netflixOriginal: true,
-    media:"movie",
+    media: "movie",
     length: "1h 57m",
     year: "2022",
-    rating:"TV-MA",
-    language:"korean",
-    cast:[
-      "Chun Woo-hee",
-      "Yim Si-wan",
-      "Kim Hie-won"
-    ],
-    description:"A woman's life is turned upside-down after a dangerous man gets a hold of her lost cell phone and uses it to track her every move."
+    rating: "TV-MA",
+    language: "korean",
+    cast: ["Chun Woo-hee", "Yim Si-wan", "Kim Hie-won"],
+    description:
+      "A woman's life is turned upside-down after a dangerous man gets a hold of her lost cell phone and uses it to track her every move.",
   },
   {
     title: "Kill Boksoon",
-    img:"/kill-boksoon.jpeg",
+    img: "/kill-boksoon.jpeg",
     banner: "/kill-boksoon-banner.jpeg",
-    genres: [
-      "Korean",
-      "Action & Adventure"
-    ],
-    tone: [
-      "Violent",
-      "Suspenseful"
-    ],
+    genres: ["Korean", "Action & Adventure"],
+    tone: ["Violent", "Suspenseful"],
     netflixOriginal: true,
-    media:"movie",
+    media: "movie",
     year: "2023",
-    rating:"TV-MA",
-    length:"2h 16m",
-    language:"korean",
-    cast:[
-      "Jeon Do-yeon",
-      "Sul Kyung-gu",
-      "Kim Si-a"
-    ],
-    description:"At work, she's a renowned assassin. At home, she's a single mum to a teenage girl. Killing is easy. It's parenting that's the hard part."
+    rating: "TV-MA",
+    length: "2h 16m",
+    language: "korean",
+    cast: ["Jeon Do-yeon", "Sul Kyung-gu", "Kim Si-a"],
+    description:
+      "At work, she's a renowned assassin. At home, she's a single mum to a teenage girl. Killing is easy. It's parenting that's the hard part.",
   },
   {
     title: "Anonymously Yours",
-    img:"/anonymously-yours.jpeg",
-    banner:"/anonymously-yours-banner.jpeg",
-    genres: [
-      "Mexican",
-      "Quirky Romance",
-      "Dramas"
-    ],
-    tone: [
-      "Quirky",
-      "Feel-Good",
-      "Romantic"
-    ],
-    media:"movie",
+    img: "/anonymously-yours.jpeg",
+    banner: "/anonymously-yours-banner.jpeg",
+    genres: ["Mexican", "Quirky Romance", "Dramas"],
+    tone: ["Quirky", "Feel-Good", "Romantic"],
+    media: "movie",
     year: "2021",
-    rating:"TV-14",
-    length:"1h 41m",
-    language:"spanish",
-    cast:[
-      "Annie Cabello",
-      "Ralf",
-      "Estefi Merelles"
-    ],
-    description:"After an accidental text message turns into a digital friendship, Vale and Alex start crushing on each other without realizing they've met in real life."
+    rating: "TV-14",
+    length: "1h 41m",
+    language: "spanish",
+    cast: ["Annie Cabello", "Ralf", "Estefi Merelles"],
+    description:
+      "After an accidental text message turns into a digital friendship, Vale and Alex start crushing on each other without realizing they've met in real life.",
   },
   {
     title: "Shrek Forever After: The Final Chapter",
-    img:"/shrek-forever-after-final-chapter.jpeg",
+    img: "/shrek-forever-after-final-chapter.jpeg",
     banner: "/shrek-banner.jpeg",
-    genres: [
-      "Family Movies",
-      "Kids & Family Movies",
-      "Comedies"
-    ],
-    tone: [
-      "Magical",
-      "Kids"
-    ],
-    media:"movie",
+    genres: ["Family Movies", "Kids & Family Movies", "Comedies"],
+    tone: ["Magical", "Kids"],
+    media: "movie",
     year: "2010",
-    rating:"PG",
-    length:"1h 35m",
-    language:"english",
-    cast:[
-      "Mike Myers",
-      "Eddie Murphy",
-      "Cameron Diaz"
-    ],
-    description:"Duped into signing a contract with devious Rumpelstiltskin, he finds himself in an alternate version of Far Far Away, where ogres are hunted, Rumpelstiltskin rules, and he and Fiona (Cameron Diaz) have never met."
+    rating: "PG",
+    length: "1h 35m",
+    language: "english",
+    cast: ["Mike Myers", "Eddie Murphy", "Cameron Diaz"],
+    description:
+      "Duped into signing a contract with devious Rumpelstiltskin, he finds himself in an alternate version of Far Far Away, where ogres are hunted, Rumpelstiltskin rules, and he and Fiona (Cameron Diaz) have never met.",
   },
   {
     title: "Over The Hedge",
-    img:"/over-the-hedge.jpeg",
-    banner:"/over-the-hedge-banner.jpeg",
-    genres: [
-      "Family Movies",
-      "Kids & Family Movies",
-      "Comedies"
-    ],
-    tone: [
-      "Kids",
-      "Animal",
-      "Comedy"
-    ],
-    media:"",
+    img: "/over-the-hedge.jpeg",
+    banner: "/over-the-hedge-banner.jpeg",
+    genres: ["Family Movies", "Kids & Family Movies", "Comedies"],
+    tone: ["Kids", "Animal", "Comedy"],
+    media: "",
     year: "",
-    rating:"PG",
-    length:"1h 23m",
-    language:"english",
-    cast:[
-      "Bruce Willis",
-      "Garry Shandling",
-      "Steve Carell"
-    ],
-    description:"When Verne (Araya A Hargate) and fellow woodland friends awake from winter's hibernation, they find they have some new neighbors: humans, and RJ (Chatchai Plengpanich), an opportunistic raccoon who shows the others how to exploit the suburban bounty laid out before them."
+    rating: "PG",
+    length: "1h 23m",
+    language: "english",
+    cast: ["Bruce Willis", "Garry Shandling", "Steve Carell"],
+    description:
+      "When Verne (Araya A Hargate) and fellow woodland friends awake from winter's hibernation, they find they have some new neighbors: humans, and RJ (Chatchai Plengpanich), an opportunistic raccoon who shows the others how to exploit the suburban bounty laid out before them.",
   },
 
   {
     title: "Hotel Translyvania",
-    img:"/hotel-translyvania.jpeg",
-    banner:"/hotel-translyvania-banner.jpeg",
-    genres: [
-      "Family Movies",
-      "Kids & Family Movies",
-      "Comedies"
-    ],
-    tone: [
-      "Goofy",
-      "Kids",
-      "First Love"
-    ],
-    media:"movie",
+    img: "/hotel-translyvania.jpeg",
+    banner: "/hotel-translyvania-banner.jpeg",
+    genres: ["Family Movies", "Kids & Family Movies", "Comedies"],
+    tone: ["Goofy", "Kids", "First Love"],
+    media: "movie",
     year: "2012",
-    rating:"PG",
-    length:"1h 31m",
-    language:"english",
-    cast:[
-      "Adam Sandler",
-      "Andy Samberg",
-      "Selena Gomez"
-    ],
-    description: "Hotel Translyvania owner Dracula pulls double duty as an overprotective dad when an unwelcome suitor shows interest in his teenage daughter."
+    rating: "PG",
+    length: "1h 31m",
+    language: "english",
+    cast: ["Adam Sandler", "Andy Samberg", "Selena Gomez"],
+    description:
+      "Hotel Translyvania owner Dracula pulls double duty as an overprotective dad when an unwelcome suitor shows interest in his teenage daughter.",
   },
   {
     title: "20th Century Girl",
-    img:"/20th-century-girl.jpeg",
-    genres: [
-      "Korean",
-      "Dramas",
-      "Romantic Movies"
-    ],
-    tone: [
-      "Charming",
-      "Heartfelt"
-    ],
-    media:"movie",
+    img: "/20th-century-girl.jpeg",
+    genres: ["Korean", "Dramas", "Romantic Movies"],
+    tone: ["Charming", "Heartfelt"],
+    media: "movie",
     year: "2022",
-    rating:"TV-PG",
-    length:"2h 1m",
-    language:"korean",
-    cast:[
-      "Kim You-jung",
-      "Byeon Woo-seok",
-      "Park Jung-woo"
-    ],
-    description: "A teen girl has her eyes set on a boy for her lovesick best friend. However, things become complicated when she falls in love and is forced to choose between love and friendship."
+    rating: "TV-PG",
+    length: "2h 1m",
+    language: "korean",
+    cast: ["Kim You-jung", "Byeon Woo-seok", "Park Jung-woo"],
+    description:
+      "A teen girl has her eyes set on a boy for her lovesick best friend. However, things become complicated when she falls in love and is forced to choose between love and friendship.",
   },
   {
     title: "Queen on the Run",
-    img:"/queens-on-the-run.jpeg",
-    genres: [
-      "Mexican",
-      "Comedies",
-      "Action & Adventure"
-    ],
-    tone: [
-      "Irreverent",
-      "Goofy"
-    ],
-    media:"movie",
+    img: "/queens-on-the-run.jpeg",
+    genres: ["Mexican", "Comedies", "Action & Adventure"],
+    tone: ["Irreverent", "Goofy"],
+    media: "movie",
     year: "2023",
-    rating:"TV-MA",
-    length:"1h 37m",
-    language:"spanish",
-    cast:[
-      "Martha Higareda",
-      "Paola Núñez",
-      "Alejandra Ambrosi"
-    ],
-    description: "When four women finally take the road trip they planned in high school, they have no idea of the things they'll bump into, sometimes literally."
+    rating: "TV-MA",
+    length: "1h 37m",
+    language: "spanish",
+    cast: ["Martha Higareda", "Paola Núñez", "Alejandra Ambrosi"],
+    description:
+      "When four women finally take the road trip they planned in high school, they have no idea of the things they'll bump into, sometimes literally.",
   },
   {
     title: "Bullet Train",
-    img:"/bullet-train.jpeg",
-    genres: [
-      "Comedies",
-      "Movies Based on Books",
-      "Action & Adventure"
-    ],
-    tone: [
-      "Offbeat"
-    ],
-    media:"movie",
+    img: "/bullet-train.jpeg",
+    genres: ["Comedies", "Movies Based on Books", "Action & Adventure"],
+    tone: ["Offbeat"],
+    media: "movie",
     year: "2022",
-    rating:"R",
-    length:"2h 6m",
-    language:"english",
-    cast:[
-      "Brad Pitt",
-      "Joey King",
-      "Aaron Taylor-Johnson"
-    ],
-    description: "Ladybug is an unlucky assassin who's determined to do his job peacefully after one too many gigs has gone off the rails. Fate, however, may have other plans as his latest mission puts him on a collision course with lethal adversaries from around the globe -- all with connected yet conflicting objectives -- on the world's fastest train."
+    rating: "R",
+    length: "2h 6m",
+    language: "english",
+    cast: ["Brad Pitt", "Joey King", "Aaron Taylor-Johnson"],
+    description:
+      "Ladybug is an unlucky assassin who's determined to do his job peacefully after one too many gigs has gone off the rails. Fate, however, may have other plans as his latest mission puts him on a collision course with lethal adversaries from around the globe -- all with connected yet conflicting objectives -- on the world's fastest train.",
   },
   {
     title: "Furies",
-    img:"/furies.jpeg",
+    img: "/furies.jpeg",
     banner: "/furies-banner.webp",
-    genres: [
-      "Vietnamese",
-      "Dramas",
-      "Martial Arts Movies"
-    ],
-    tone: [
-      "Gritty",
-      "Emotional"
-    ],
-    media:"movie",
+    genres: ["Vietnamese", "Dramas", "Martial Arts Movies"],
+    tone: ["Gritty", "Emotional"],
+    media: "movie",
     year: "2023",
-    rating:"TV-MA",
-    length:"1h 50m",
-    language:"vietnamese",
-    cast:[
-      "Dong Anh Quynh",
-      "Toc Tien",
-      "Thuan Nguyen"
-    ],
-    description: "Three furious vigilantes unite to take down a sinister"
+    rating: "TV-MA",
+    length: "1h 50m",
+    language: "vietnamese",
+    cast: ["Dong Anh Quynh", "Toc Tien", "Thuan Nguyen"],
+    description: "Three furious vigilantes unite to take down a sinister",
   },
   {
     title: "Enola Holmes 2",
-    img:"/enola-holmes-2.jpeg",
-    banner:"/enola-holmes-2-banner.jpeg",
-    genres: [
-      "Family Movies",
-      "Dramas",
-      "Mysteries"
-    ],
-    tone: [
-      "Witty",
-      "Exciting"
-    ],
-    media:"movie",
+    img: "/enola-holmes-2.jpeg",
+    banner: "/enola-holmes-2-banner.jpeg",
+    genres: ["Family Movies", "Dramas", "Mysteries"],
+    tone: ["Witty", "Exciting"],
+    media: "movie",
     year: "2022",
-    rating:"PG-13",
-    length:"2h 10m",
-    language:"english",
-    cast:[
-      "Millie Bobby Brown",
-      "Henry Cavill",
-      "David Thewlis"
-    ],
-    description: "Enola Holmes takes on her first case as a detective, but to unravel the mystery of a missing girl, she'll need some help from friends -- and brother Sherlock."
+    rating: "PG-13",
+    length: "2h 10m",
+    language: "english",
+    cast: ["Millie Bobby Brown", "Henry Cavill", "David Thewlis"],
+    description:
+      "Enola Holmes takes on her first case as a detective, but to unravel the mystery of a missing girl, she'll need some help from friends -- and brother Sherlock.",
   },
-]
-
+];
 
 export const movieTemplate = [
   {
     title: "",
-    img:"",
-    genres: [
-      "",
-      ""
-    ],
-    tone: [
-      ""
-    ],
-    media:"",
+    img: "",
+    genres: ["", ""],
+    tone: [""],
+    media: "",
     year: "",
-    rating:"",
-    length:"",
-    language:"",
-    cast:[
-      "",
-      "",
-      ""
-    ],
-    description: ""
+    rating: "",
+    length: "",
+    language: "",
+    cast: ["", "", ""],
+    description: "",
   },
-
-] ;
-
+];
 
 export const myList = [
   {
     title: "The Glory",
     genres: ["TV Drama", "Thriller"],
-    tone: [
-      "Dark"
-    ],
+    tone: ["Dark"],
     img: "/the-glory.jpeg",
     banner: "/the-glory-banner.webp",
     media: "show",
@@ -983,23 +687,23 @@ export const myList = [
     seasons: "1",
     language: "korean",
     cast: ["Song Hye-kyo", "Lim Ji-yeon", "Lee Do-hyun", "Jung Sung II"],
-    description: "A young woman, bullied to the point of deciding to drop out of school, plans the best way to get revenge. After becoming a primary school teacher, she takes in the son of the man who tormented her the most to enact her vengeance."
+    description:
+      "A young woman, bullied to the point of deciding to drop out of school, plans the best way to get revenge. After becoming a primary school teacher, she takes in the son of the man who tormented her the most to enact her vengeance.",
   },
   {
     title: "My Liberation Notes",
     img: "/my-liberation-notes.jpeg",
     banner: "/my-liberation-notes-banner.jpeg",
     genres: ["Korean", "TV Dramas"],
-    tone: [
-      "Understated"
-    ],
+    tone: ["Understated"],
     media: "show",
     year: "2022",
     rating: "TV-MA",
     seasons: "1",
     language: "korean",
     cast: ["Lee Min-ki", "Kim Ji-won", "Son Suk-ku"],
-    description: "Three siblings, exhausted by the monotony of day-to-day adulthood, seek to find fulfillment and freedom from their humdrum lives."
+    description:
+      "Three siblings, exhausted by the monotony of day-to-day adulthood, seek to find fulfillment and freedom from their humdrum lives.",
   },
   {
     title: "Wednesday",
@@ -1012,16 +716,14 @@ export const myList = [
     seasons: "1",
     language: "english",
     cast: ["Jenna Ortega", "Gwendoline Christie", "Riki Lindhome"],
-    description: "While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago."
+    description:
+      "While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.",
   },
   {
     title: "The Disastrous Life of Saiki K.",
     img: "/saiki.jpeg",
     banner: "/saiki-banner.jpeg",
-    genres:[ 
-      "Shounen Anime",
-      "Japanese Anime Series"
-    ],
+    genres: ["Shounen Anime", "Japanese Anime Series"],
     tone: ["Deadpan", "Absurd", "Offbeat"],
     media: "show",
     year: "2018",
@@ -1029,7 +731,8 @@ export const myList = [
     seasons: "3",
     language: "japanese",
     cast: ["Hiroshi Kamiya"],
-    description: "A high school student with powerful psychic abilities tries to live an ordinary life by keeping his true nature a secret from his many quirky classmates and anyone else he comes across."
+    description:
+      "A high school student with powerful psychic abilities tries to live an ordinary life by keeping his true nature a secret from his many quirky classmates and anyone else he comes across.",
   },
   {
     title: "Inside Job",
@@ -1042,17 +745,14 @@ export const myList = [
     seasons: "1",
     language: "english",
     cast: ["Lizzie Caplan"],
-    description: "Anti-social genius Reagan Ridley and her dysfunctional team work to hide the world's conspiracies."
+    description:
+      "Anti-social genius Reagan Ridley and her dysfunctional team work to hide the world's conspiracies.",
   },
   {
     title: "First Kill",
     img: "/first-kill.jpeg",
     banner: "/first-kill.webp",
-    genres: [
-      "Romantic TV Dramas",
-      "TV Dramas",
-      "TV Shows Based on Books"
-    ],
+    genres: ["Romantic TV Dramas", "TV Dramas", "TV Shows Based on Books"],
     tone: ["Soapy", "Suspenseful"],
     media: "show",
     year: "2022",
@@ -1060,17 +760,14 @@ export const myList = [
     seasons: "1",
     language: "english",
     cast: ["Sarah Catherine Hook", "Imani Lewis"],
-    description: "Falling in love is tricky for teens Juliette and Calliope because one's a vampire and the other's a vampire hunter -- and both are ready to make their first kill."
+    description:
+      "Falling in love is tricky for teens Juliette and Calliope because one's a vampire and the other's a vampire hunter -- and both are ready to make their first kill.",
   },
   {
     title: "On My Block",
     img: "/on-my-block.jpeg",
     banner: "/on-my-block-banner.jpeg",
-    genres: [
-      "Romantic TV Dramas",
-      "TV Dramas",
-      "Teen TV Shows"
-    ],
+    genres: ["Romantic TV Dramas", "TV Dramas", "Teen TV Shows"],
     tone: ["Witty", "Emotional", "Teen"],
     media: "show",
     year: "2021",
@@ -1078,127 +775,82 @@ export const myList = [
     seasons: "14",
     language: "english",
     cast: ["Sierra Capri", "Jason Genao", "Brett Gray"],
-    description: "Lifelong friendships are tested as Monse, Ruby, Jamal and Cesar confront the challenges of adolescence and life in their predominantly Hispanic and black neighborhood in South Central Los Angeles in this coming-of-age comedy series."
+    description:
+      "Lifelong friendships are tested as Monse, Ruby, Jamal and Cesar confront the challenges of adolescence and life in their predominantly Hispanic and black neighborhood in South Central Los Angeles in this coming-of-age comedy series.",
   },
   {
     title: "Unlocked",
-    img:"/unlocked.jpeg",
-    genres: [
-      "Korean",
-      "Thriller Movies",
-      "Mysteries"
-    ],
+    img: "/unlocked.jpeg",
+    genres: ["Korean", "Thriller Movies", "Mysteries"],
     netflixOriginal: true,
-    media:"movie",
+    media: "movie",
     length: "1h 57m",
     year: "2022",
-    rating:"TV-MA",
-    language:"korean",
-    cast:[
-      "Chun Woo-hee",
-      "Yim Si-wan",
-      "Kim Hie-won"
-    ],
-    description:"A woman's life is turned upside-down after a dangerous man gets a hold of her lost cell phone and uses it to track her every move."
+    rating: "TV-MA",
+    language: "korean",
+    cast: ["Chun Woo-hee", "Yim Si-wan", "Kim Hie-won"],
+    description:
+      "A woman's life is turned upside-down after a dangerous man gets a hold of her lost cell phone and uses it to track her every move.",
   },
   {
     title: "Kill Boksoon",
-    img:"/kill-boksoon.jpeg",
-    banner:"/kill-boksoon-banner.jpeg",
-    genres: [
-      "Korean",
-      "Action & Adventure"
-    ],
-    tone: [
-      "Violent",
-      "Suspenseful"
-    ],
-    media:"movie",
+    img: "/kill-boksoon.jpeg",
+    banner: "/kill-boksoon-banner.jpeg",
+    genres: ["Korean", "Action & Adventure"],
+    tone: ["Violent", "Suspenseful"],
+    media: "movie",
     year: "2023",
-    rating:"TV-MA",
-    length:"2h 16m",
-    language:"",
-    cast:[
-      "Jeon Do-yeon",
-      "Sul Kyung-gu",
-      "Kim Si-a"
-    ],
-    description:"At work, she's a renowned assassin. At home, she's a single mum to a teenage girl. Killing is easy. It's parenting that's the hard part."
+    rating: "TV-MA",
+    length: "2h 16m",
+    language: "",
+    cast: ["Jeon Do-yeon", "Sul Kyung-gu", "Kim Si-a"],
+    description:
+      "At work, she's a renowned assassin. At home, she's a single mum to a teenage girl. Killing is easy. It's parenting that's the hard part.",
   },
   {
     title: "20th Century Girl",
-    img:"/20th-century-girl.jpeg",
-    banner:"/20th-century-girl-banner.jpeg",
-    genres: [
-      "Korean",
-      "Dramas",
-      "Romantic Movies"
-    ],
-    tone: [
-      "Charming",
-      "Heartfelt"
-    ],
-    media:"movie",
+    img: "/20th-century-girl.jpeg",
+    banner: "/20th-century-girl-banner.jpeg",
+    genres: ["Korean", "Dramas", "Romantic Movies"],
+    tone: ["Charming", "Heartfelt"],
+    media: "movie",
     year: "2022",
-    rating:"TV-PG",
-    length:"2h 1m",
-    language:"korean",
-    cast:[
-      "Kim You-jung",
-      "Byeon Woo-seok",
-      "Park Jung-woo"
-    ],
-    description: "A teen girl has her eyes set on a boy for her lovesick best friend. However, things become complicated when she falls in love and is forced to choose between love and friendship."
+    rating: "TV-PG",
+    length: "2h 1m",
+    language: "korean",
+    cast: ["Kim You-jung", "Byeon Woo-seok", "Park Jung-woo"],
+    description:
+      "A teen girl has her eyes set on a boy for her lovesick best friend. However, things become complicated when she falls in love and is forced to choose between love and friendship.",
   },
   {
     title: "Queen on the Run",
-    img:"/queens-on-the-run.jpeg",
-    banner:"/queens-on-the-run-banner.jpeg",
-    genres: [
-      "Mexican",
-      "Comedies",
-      "Action & Adventure"
-    ],
-    tone: [
-      "Irreverent",
-      "Goofy"
-    ],
-    media:"movie",
+    img: "/queens-on-the-run.jpeg",
+    banner: "/queens-on-the-run-banner.jpeg",
+    genres: ["Mexican", "Comedies", "Action & Adventure"],
+    tone: ["Irreverent", "Goofy"],
+    media: "movie",
     year: "2023",
-    rating:"TV-MA",
-    length:"1h 37m",
-    language:"spanish",
-    cast:[
-      "Martha Higareda",
-      "Paola Núñez",
-      "Alejandra Ambrosi"
-    ],
-    description: "When four women finally take the road trip they planned in high school, they have no idea of the things they'll bump into, sometimes literally."
+    rating: "TV-MA",
+    length: "1h 37m",
+    language: "spanish",
+    cast: ["Martha Higareda", "Paola Núñez", "Alejandra Ambrosi"],
+    description:
+      "When four women finally take the road trip they planned in high school, they have no idea of the things they'll bump into, sometimes literally.",
   },
   {
     title: "Bullet Train",
-    img:"/bullet-train.jpeg",
-    genres: [
-      "Comedies",
-      "Movies Based on Books",
-      "Action & Adventure"
-    ],
-    tone: [
-      "Offbeat"
-    ],
-    media:"movie",
+    img: "/bullet-train.jpeg",
+    genres: ["Comedies", "Movies Based on Books", "Action & Adventure"],
+    tone: ["Offbeat"],
+    media: "movie",
     year: "2022",
-    rating:"R",
-    length:"2h 6m",
-    language:"english",
-    cast:[
-      "Brad Pitt",
-      "Joey King",
-      "Aaron Taylor-Johnson"
-    ],
-    description: "Ladybug is an unlucky assassin who's determined to do his job peacefully after one too many gigs has gone off the rails. Fate, however, may have other plans as his latest mission puts him on a collision course with lethal adversaries from around the globe -- all with connected yet conflicting objectives -- on the world's fastest train."
+    rating: "R",
+    length: "2h 6m",
+    language: "english",
+    cast: ["Brad Pitt", "Joey King", "Aaron Taylor-Johnson"],
+    description:
+      "Ladybug is an unlucky assassin who's determined to do his job peacefully after one too many gigs has gone off the rails. Fate, however, may have other plans as his latest mission puts him on a collision course with lethal adversaries from around the globe -- all with connected yet conflicting objectives -- on the world's fastest train.",
   },
-
 ];
 
 export const popularOnNetflix = [
@@ -1206,10 +858,7 @@ export const popularOnNetflix = [
     title: "Narcos",
     img: "/narcos.jpeg",
     banner: "/narcos-banner.webp",
-    genres: [
-      "TV Dramas",
-      "Crime TV Shows"
-    ],
+    genres: ["TV Dramas", "Crime TV Shows"],
     tone: ["Gritty", "Dark", "Thriller"],
     media: "show",
     year: "2017",
@@ -1221,11 +870,7 @@ export const popularOnNetflix = [
   {
     title: "First Kill",
     img: "/first-kill.jpeg",
-    genres: [
-      "Romantic TV Dramas",
-      "TV Dramas",
-      "TV Shows Based on Books"
-    ],
+    genres: ["Romantic TV Dramas", "TV Dramas", "TV Shows Based on Books"],
     tone: ["soapy", "suspenseful"],
     media: "show",
     year: "2022",
@@ -1233,17 +878,14 @@ export const popularOnNetflix = [
     seasons: "1",
     language: "english",
     cast: ["Sarah Catherine Hook", "Imani Lewis"],
-    description: "Falling in love is tricky for teens Juliette and Calliope because one's a vampire and the other's a vampire hunter -- and both are ready to make their first kill."
+    description:
+      "Falling in love is tricky for teens Juliette and Calliope because one's a vampire and the other's a vampire hunter -- and both are ready to make their first kill.",
   },
   {
     title: "On My Block",
     img: "/on-my-block.jpeg",
     banner: "/on-my-block-banner.jpeg",
-    genres: [
-      "Romantic TV Dramas",
-      "TV Dramas",
-      "Teen TV Shows"
-    ],
+    genres: ["Romantic TV Dramas", "TV Dramas", "Teen TV Shows"],
     tone: ["Witty", "Emotional", "Teen"],
     media: "show",
     year: "2021",
@@ -1251,25 +893,23 @@ export const popularOnNetflix = [
     seasons: "4",
     language: "english",
     cast: ["Sierra Capri", "Jason Genao", "Brett Gray"],
-    description: "Lifelong friendships are tested as Monse, Ruby, Jamal and Cesar confront the challenges of adolescence and life in their predominantly Hispanic and black neighborhood in South Central Los Angeles in this coming-of-age comedy series."
+    description:
+      "Lifelong friendships are tested as Monse, Ruby, Jamal and Cesar confront the challenges of adolescence and life in their predominantly Hispanic and black neighborhood in South Central Los Angeles in this coming-of-age comedy series.",
   },
   {
     title: "Control Z",
     img: "/control-z.jpeg",
     banner: "/control-z-banner.jpeg",
     genres: ["Soapy", "Teen", "Ensemble"],
-    tone:[
-      "Soapy",
-      "Teen",
-      "Ensemble"
-    ],
+    tone: ["Soapy", "Teen", "Ensemble"],
     media: "show",
     year: "2022",
     rating: "TV-MA",
     seasons: "3",
     language: "spanish",
     cast: ["Ana Valeria Becerril", "Michael Ronda"],
-    description: "When a hacker begins releasing students' secrets to the entire high school, the socially isolated but observant Sofía works to uncover the hacker's identity."
+    description:
+      "When a hacker begins releasing students' secrets to the entire high school, the socially isolated but observant Sofía works to uncover the hacker's identity.",
   },
   {
     title: "Chilling Adventures of Sabrina",
@@ -1281,7 +921,8 @@ export const popularOnNetflix = [
     seasons: "4",
     language: "english",
     cast: ["Kiernan Shipka", "Ross Lynch", "Miranda Otto"],
-    description: "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries."
+    description:
+      "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.",
   },
   {
     title: "Never Have I Ever",
@@ -1294,7 +935,7 @@ export const popularOnNetflix = [
     seasons: "3",
     language: "english",
     cast: ["Maitreyi Ramakrishnan", "Poorna Jagannathan"],
-    description: "After a traumatic year, a first-generation Indian-American teenager wants to improve her status at school, but friends, family, and feelings don't make it easy on her."
+    description:
+      "After a traumatic year, a first-generation Indian-American teenager wants to improve her status at school, but friends, family, and feelings don't make it easy on her.",
   },
 ];
-
