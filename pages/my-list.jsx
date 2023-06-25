@@ -1,7 +1,7 @@
-import { myList } from "@/components/Data";
-import Grid from "@/components/Grid";
-import Navbar from "@/components/layout/Navbar";
-import Layout from "@/components/layout/layout";
+import { myList } from "../components/Data";
+import Grid from "../components/Grid";
+import Navbar from "../components/layout/Navbar";
+import Layout from "../components/layout/layout";
 
 export default function MyList() {
   return (

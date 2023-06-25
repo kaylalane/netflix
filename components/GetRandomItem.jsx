@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 export default function getRandomTitles(initialList, length) {
+  if (initialList == null) {
+    return initialList;
+  }
   const titles = [];
 
   function getRandomInt(max) {

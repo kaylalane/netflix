@@ -36,7 +36,7 @@ export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
     <div className="slider-container">
       <h2>{rowTitle}</h2>
       <div className="relative">
-        <div className="relative h-fit">
+        <div className="relative h-fit overflow-clip">
           <div className="flex flex-2 gap-2 m-0 h-[150px] overflow-visible">
             {currentlyShowing.map((title) => (
               <Item

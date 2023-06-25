@@ -1,9 +1,9 @@
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "../components/layout/Navbar";
 import Image from "next/image";
-import Row from "@/components/Row";
-import { allMovies, myList } from "@/components/Data";
-import Footer from "@/components/layout/Footer";
-import styles from "@/styles/feature.module.scss";
+import Row from "../components/Row";
+import { allMovies, myList } from "../components/Data";
+import Footer from "../components/layout/Footer";
+import styles from "../styles/feature.module.scss";
 
 export default function Movies() {
   const myMoviesList = myList.filter((media) => media.media == "movie");
@@ -109,7 +109,7 @@ export default function Movies() {
           rowTitle={"Feel-Good Comedies"}
           isRandomTitles={false}
         />
-        <Row allTitles={dramaMovies} rowTitle={"Dramas"} isRandomTitles={false} />
+        <Row currentTitles={dramaMovies} rowTitle={"Dramas"} isRandomTitles={false} />
         <Row
           currentTitles={familyMovies}
           rowTitle={"Family Movies"}

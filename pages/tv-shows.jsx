@@ -1,12 +1,12 @@
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "../components/layout/Navbar";
 import Image from "next/image";
-import Row from "@/components/Row";
-import { allShows, myList, popularOnNetflix } from "@/components/Data";
-import Footer from "@/components/layout/Footer";
+import Row from "../components/Row";
+import { allShows, myList, popularOnNetflix } from "../components/Data";
+import Footer from "../components/layout/Footer";
 import { useEffect, useState } from "react";
-import getRandomTitles from "@/components/GetRandomItem";
-import Layout from "@/components/layout/layout";
-import styles from "@/styles/feature.module.scss";
+import getRandomTitles from "../components/GetRandomItem";
+import Layout from "../components/layout/layout";
+import styles from "../styles/feature.module.scss";
 
 export default function TV() {
   const [featuredMedia, setFeaturedMedia] = useState(allShows);
@@ -15,7 +15,7 @@ export default function TV() {
     setFeaturedMedia(getRandomTitles(allShows, 1));
   }, []);
 
-  const myMoviesList = myList.filter((media) => media.media == "show");
+  const myShowsList = myList.filter((media) => media.media == "show");
 
   const spanishShows = allShows.filter((show) =>
     show.language.includes("spanish")
@@ -102,16 +102,16 @@ export default function TV() {
           </div>
         </div>
       </div>
-      <Row allTitles={allShows} rowTitle={"Trending Now"} isRandomTitles={true} />
-      <Row allTitles={allShows} rowTitle={"My List"} isRandomTitles={false} />
-      <Row allTitles={allShows} rowTitle={"Popular on Netflix"} isRandomTitles={true} />
+      <Row currentTitles={allShows} rowTitle={"Trending Now"} isRandomTitles={true} />
+      <Row currentTitles={myShowsList} rowTitle={"My List"} isRandomTitles={false} />
+      <Row currentTitles={allShows} rowTitle={"Popular on Netflix"} isRandomTitles={true} />
       <Row
-        allTitles={koreanShows}
+        currentTitles={koreanShows}
         rowTitle={"Korean TV Shows"}
         isRandomTitles={false}
       />
       <Row
-        allTitles={spanishShows}
+        currentTitles={spanishShows}
         rowTitle={"Spanish TV Shows"}
         isRandomTitles={false}
       />

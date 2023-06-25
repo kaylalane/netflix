@@ -332,7 +332,7 @@ export const allShows = [
     language: "english",
     cast: ["Jason Ralph", "Arjun Gupta", "Hale Appleman"],
     description:
-      "Quentin Coldwater, a grad student at Brakebills College for Magical Pedagogy, has been fascinated by the magical fantasy world since he was young. But as he has gotten older, Quentin and his 20-something friends have discovered that the magical world they read about as children is not only real, but it poses dangers to humanity.",
+      "Quentin Coldwater and his 20-something friends have discovered that the magical world they read about as children is not only real, but it poses dangers to humanity.",
   },
   {
     title: "Move to Heaven",

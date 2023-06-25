@@ -10,7 +10,7 @@ export default function Accordion() {
       value={{ color: "red", className: "global-class-name" }}
     >
       <Navbar />
-      <div className="flex flex-col gap-4 pt-12 px-12 m-0 h-auto text-white h-screen	">
+      <div className="flex flex-col gap-4 pt-12 px-12 m-0 text-white h-screen	">
         <h2 className="text-4xl pt-3">FAQ</h2>
         <Panel
           title="How much does it cost?"

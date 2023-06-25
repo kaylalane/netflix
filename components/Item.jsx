@@ -209,7 +209,7 @@ export default function Item({ title }) {
                               d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
                               stroke="#ffffff"
                               strokeWidth="1.5"
-                              stroke-linecap="round"
+                              strokeLinecap="round"
                               stroke-linejoin="round"
                             ></path>
                           </svg>

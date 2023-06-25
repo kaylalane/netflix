@@ -14,6 +14,7 @@ const Navbar = () => {
     setHamburger(!hamburger);
   }
   useEffect(() => {
+    const navEl = document.getElementById('nav');
     const checkIfClickedOutside = (e) => {
       // If the menu is open and the clicked target is not within the menu,
       // then close the menu
@@ -29,6 +30,7 @@ const Navbar = () => {
     };
     window.addEventListener("unload", handlePageShow);
     document.addEventListener("mousedown", checkIfClickedOutside);
+    document.addEventListener('scroll', () => navEl.classList.toggle("bg-black", window.screenY == 0))
 
     return () => {
       document.removeEventListener("mousedown", checkIfClickedOutside);
@@ -55,7 +57,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className={styles.navbar}>
+    <nav className={styles.navbar + ""} id="nav">
       <Link href="/browse" aria-label="Netflix" className={styles.logo}>
         Netflix
       </Link>
@@ -123,7 +125,7 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

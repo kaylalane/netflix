@@ -33,7 +33,7 @@
   z-index: 1;
   padding: 0;
   margin: 0;
-  width: 40vw;
+  width: 70vw;
   color: white;
   button {
     display: flex;
@@ -50,8 +50,6 @@
   }
 
 
-
- 
 }
 
 .title {
@@ -60,7 +58,7 @@
   margin: 0;
 
   text-transform: uppercase;
-  font-size: clamp(14px, 30px, 40px);
+  font-size: clamp(.75rem, 1.5rem, 3rem);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -68,7 +66,7 @@
 .description {
   padding-left: 3px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(9px, 2vw, 14px);
+  font-size: clamp(9px, 1rem, 14px);
 
   z-index: 1;
   color: white;
@@ -101,4 +99,11 @@
 .infoButton {
   background-color: rgba(71, 70, 70, 0.763);
   color: white;
+}
+
+@media (min-width: 576px) {
+
+.featuredInfo {
+  width: 60vw;
+}
 }

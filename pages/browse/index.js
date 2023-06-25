@@ -1,18 +1,19 @@
 /* eslint-disable no-unused-vars */
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import Layout from "@/components/layout/layout";
-import { myList, allShows, allMovies } from "@/components/Data";
-import { animatedTVShows } from "@/lib/data";
-import Row from "@/components/Row";
-import getRandomTitles from "@/components/GetRandomItem";
-import styles from "@/styles/feature.module.scss";
-import getMyList from "@/components/getMyList";
+import {lazy, useEffect, useMemo, useState } from "react";
+import Layout from "../../components/layout/layout";
+import { myList, allShows, allMovies } from "../../components/Data";
+import { animatedTVShows } from "../../lib/data";
+import Row from "../../components/Row";
+import getRandomTitles from "../../components/GetRandomItem";
+import styles from "../../styles/feature.module.scss";
+import getMyList from "../../components/getMyList";
 
 export default function Home() {
   const allTitles = [...allMovies, ...allShows];
   const [featuredMedia, setFeaturedMedia] = useState(allShows);
+
   useEffect(() => {
     setFeaturedMedia(getRandomTitles(allShows, 1));
   }, []);
@@ -53,7 +54,7 @@ export default function Home() {
             <p>Series</p>
           </div>
 
-          <h2 className="text-3xl">{featuredMedia[0].title}</h2>
+          <h2 className={styles.title}>{featuredMedia[0].title}</h2>
 
           <p className={styles.description}>{featuredMedia[0].description}</p>
 
