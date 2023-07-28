@@ -51,7 +51,7 @@ export default function Signin() {
                   <label>
                     <input required type="email" placeholder="Email address" />
                   </label>
-                  <button role="button" type="submit">
+                  <button role="button" type="submit" className=" ">
                     Get Started
                   </button>
                 </div>

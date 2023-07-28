@@ -36,9 +36,6 @@
     padding: 1rem 0;
   }
 
-  .container {
-  }
-
   form {
     display: flex;
     flex-flow: column nowrap;
@@ -69,7 +66,7 @@
     height: 50px;
     padding: 0 1rem;
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
   }
 }
 
