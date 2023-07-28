@@ -1,4 +1,4 @@
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "../components/layout/Navbar";
 import { useState } from "react";
 import { IconContext } from "react-icons";
 import { BsChevronDown, BsChevronRight } from "react-icons/bs";

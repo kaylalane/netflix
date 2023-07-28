@@ -1,23 +1,32 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
 import getRandomTitles from "./GetRandomItem";
+import { useMemo } from "react";
 
 export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
   const [currentTitlesPosition, setCurrentTitlesPosition] = useState(0);
   const [titles, setTitles] = useState(currentTitles);
   let [isOpen, setIsOpen] = useState(false);
 
+  var currentlyShowing = useMemo(() => {
+    titles.slice(currentTitlesPosition, currentTitlesPosition + 6);
+  }, [currentTitlesPosition, titles]);
+
   useEffect(() => {
     if (isRandomTitles) {
       setTitles(getRandomTitles(currentTitles, 10));
     }
-  }, [currentTitles, currentlyShowing, isRandomTitles, currentTitlesPosition]);
-  var currentlyShowing = [];
+  }, [currentTitles, isRandomTitles, currentTitlesPosition]);
+
   if (titles) {
     currentlyShowing = titles.slice(
       currentTitlesPosition,
       currentTitlesPosition + 6
     );
+  }
+
+  function resetTitles() {
+    return titles.slice(currentTitlesPosition, currentTitlesPosition + 6);
   }
 
   function prev() {
