@@ -52,7 +52,7 @@ export default function Item({ title }) {
             className="sourceImg"
           />
         </div>
-        <div className=" invisible sm:visible">
+        <div className=" invisible ">
           <div className="sm:details w-[250px] bg-gray-900 rounded-b-md p-2">
             <div className="flex gap-2 p-1">
               <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full">
@@ -96,7 +96,12 @@ export default function Item({ title }) {
         </div>
         {isOpen ? (
           <Transition appear show={isOpen} as={Fragment}>
-            <Dialog as="div" className="relative z-10" onClose={closeModal}>
+            <Dialog
+              as="div"
+              className="relative z-10"
+              onClose={closeModal}
+              open={isOpen}
+            >
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"

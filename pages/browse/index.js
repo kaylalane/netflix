@@ -9,6 +9,7 @@ import Row from "../../components/Row";
 import getRandomTitles from "../../components/GetRandomItem";
 import styles from "../../styles/feature.module.scss";
 import getMyList from "../../components/getMyList";
+import RowTemp from "../../components/RowTemp";
 
 export default function Home() {
   const allTitles = [...allMovies, ...allShows];
@@ -127,6 +128,10 @@ export default function Home() {
         rowTitle={"Spanish Movies & TV Shows"}
         isRandomTitles={false}
       />
+    <RowTemp 
+        currentTitles={animatedTVShows}
+        rowTitle={"Spanish Movies & TV Shows"}
+        isRandomTitles={false}/>
     </>
   );
 }

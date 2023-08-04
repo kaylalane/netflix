@@ -1,47 +1,31 @@
 import { useEffect, useState } from "react";
 import Item from "./Item";
 import getRandomTitles from "./GetRandomItem";
-import { useMemo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 
 const itemWidth = 250;
 const itemHeight = 150;
 
-export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
+export default function RowTemp({ currentTitles, rowTitle, isRandomTitles }) {
   const [currentTitlesPosition, setCurrentTitlesPosition] = useState(0);
-  const [titles, setTitles] = useState(currentTitles);
-  let [isOpen, setIsOpen] = useState(false);
+  const [currentlyShowing, setCurrentlyShowing] = useState(currentTitles[0]);
   const [selectedId, setSelectedId] = useState(null);
-
-  var currentlyShowing = useMemo(() => {
-    titles.slice(currentTitlesPosition, currentTitlesPosition + 5);
-  }, [currentTitlesPosition, titles]);
+  const length = currentTitles.length;
 
   useEffect(() => {
     if (isRandomTitles) {
-      setTitles(getRandomTitles(currentTitles, 10));
-    }
-  }, [currentTitles, isRandomTitles, currentTitlesPosition]);
-
-  if (titles) {
-    currentlyShowing = titles.slice(
-      currentTitlesPosition,
-      currentTitlesPosition + 5
-    );
-  }
+      currentlyShowing(getRandomTitles(currentTitles, 10));
+    } 
+  }, [currentTitles, isRandomTitles, currentlyShowing]);
 
   function prev() {
-    if (titles[currentTitlesPosition - 1] != null) {
+    if (titles[currentTitlesPosition - 1] >= 0) {
       setCurrentTitlesPosition(currentTitlesPosition - 1);
     }
   }
 
   function next() {
-    if (
-      titles[currentTitlesPosition + 1] != null &&
-      currentTitlesPosition != 7
-    ) {
+    if (titles[currentTitlesPosition + 1] != null && currentTitlesPosition != 7) {
       setCurrentTitlesPosition(currentTitlesPosition + 1);
     }
   }
@@ -51,13 +35,21 @@ export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
       <h2>{rowTitle}</h2>
       <div className="relative">
         <div className="relative h-fit overflow-x-clip">
-          <div className="flex flex-2 gap-2 m-0 h-[150px] overflow-visible">
+          <div className="flex flex-2 gap-2 h-[150px] overflow-visible">
             {currentlyShowing.map((title) => (
-              <Item
-                title={title}
+              <motion.div
                 key={title.title}
-                onShow={() => setIsOpen(true)}
-              />
+                layoutId={title.id}
+                onClick={() => setSelectedId(title.title)}
+              >
+                <motion.img
+                  src={title.img}
+                  alt={title.title}
+                  width={itemWidth}
+                  height={itemHeight}
+                  className="sourceImg"
+                />
+              </motion.div>
             ))}
           </div>
 
@@ -82,7 +74,7 @@ export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
           </button>
         )}
 
-        {currentTitlesPosition != 6 && (
+        {currentTitlesPosition != length-1 && (
           <button
             aria-label="Next"
             className="absolute top-0 right-0 z-50 w-[50px] h-[150px] text-2xl"

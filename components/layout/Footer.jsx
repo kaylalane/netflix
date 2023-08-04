@@ -33,7 +33,6 @@ export default function Footer() {
           target={"_blank"}
           className="inline underline"
         >
-          {" "}
           Kayla Lane
         </a>
       </p>
