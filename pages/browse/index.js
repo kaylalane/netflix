@@ -128,10 +128,6 @@ export default function Home() {
         rowTitle={"Spanish Movies & TV Shows"}
         isRandomTitles={false}
       />
-    <RowTemp 
-        currentTitles={animatedTVShows}
-        rowTitle={"Spanish Movies & TV Shows"}
-        isRandomTitles={false}/>
     </>
   );
 }
