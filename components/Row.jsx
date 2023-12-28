@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Item from "./Item";
 import getRandomTitles from "./GetRandomItem";
 import { useMemo } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -22,29 +21,51 @@ export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
     }
   }, [currentTitles, isRandomTitles, currentTitlesPosition]);
 
-
   return (
     <div className="slider-container">
-      <h2>{rowTitle}</h2>
+      <h2 className=" text-red-600">{rowTitle}</h2>
       <div className="relative">
         <div className="relative h-fit overflow-x-clip">
-          <div className="flex flex-2 gap-2 m-0 h-[150px] overflow-visible">
-            <Swiper
-              spaceBetween={10}
-              slidesPerView={4}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
-            >
-              {titles.map((title) => (
-                <SwiperSlide key={title.title}>
-                  <Item
-                    title={title}
-                    key={title.title}
-                    onShow={() => setIsOpen(true)}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <div className="flex flex-2 gap-2 md:h-[150px] overflow-visible">
+            <div className=" hidden md:contents">
+              <Swiper
+                spaceBetween={10}
+                slidesPerView={4}
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+                c
+              >
+                {titles.map((title) => (
+                  <SwiperSlide key={title.title}>
+                    <Item
+                      title={title}
+                      key={title.title}
+                      onShow={() => setIsOpen(true)}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+{/* 
+            <div className=" md:hidden">
+              <Swiper
+                spaceBetween={10}
+                slidesPerView={1}
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+                
+              >
+                {titles.map((title) => (
+                  <SwiperSlide key={title.title}>
+                    <Item
+                      title={title}
+                      key={title.title}
+                      onShow={() => setIsOpen(true)}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div> */}
           </div>
         </div>
       </div>

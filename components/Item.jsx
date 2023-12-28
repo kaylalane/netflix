@@ -23,14 +23,6 @@ export default function Item({ title }) {
     setIsOpen(false);
   }
 
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function handleClick() {
-    setIsOpen(true);
-  }
-
   function addToList() {
     if (!myList.includes(title)) {
       console.log(title);
@@ -52,8 +44,8 @@ export default function Item({ title }) {
             className="sourceImg"
           />
         </div>
-        <div className=" invisible ">
-          <div className="sm:details w-[250px] bg-gray-900 rounded-b-md p-2">
+        {/*   <div className=" hidden">
+          <div className="details w-[250px] bg-gray-900 rounded-b-md p-2">
             <div className="flex gap-2 p-1">
               <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full">
                 <BsPlayFill className="mx-auto" />
@@ -92,8 +84,9 @@ export default function Item({ title }) {
                 {title.tone && title.tone.join(" \u2022 ")}
               </div>
             </div>
+
           </div>
-        </div>
+        </div> */}
         {isOpen ? (
           <Transition appear show={isOpen} as={Fragment}>
             <Dialog
@@ -133,7 +126,7 @@ export default function Item({ title }) {
                           alt={title.title}
                           width={itemWidth}
                           height={itemHeight}
-                          className="w-full relative"
+                          className="w-full relative "
                         />
                         <Dialog.Title
                           as="h3"

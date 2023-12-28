@@ -1,4 +1,4 @@
-import "styles/globals.scss";
+import "../styles/globals.scss";
 import Layout from "../components/layout/layout";
 import React from "react";
 // Import the functions you need from the SDKs you need

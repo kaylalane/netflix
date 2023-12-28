@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Head from "next/head";
 import Image from "next/image";
-import {lazy, useEffect, useMemo, useState } from "react";
+import {lazy, useEffect, useMemo, useRef, useState } from "react";
 import Layout from "../../components/layout/layout";
 import { myList, allShows, allMovies } from "../../components/Data";
 import { animatedTVShows } from "../../lib/data";
@@ -9,7 +9,6 @@ import Row from "../../components/Row";
 import getRandomTitles from "../../components/GetRandomItem";
 import styles from "../../styles/feature.module.scss";
 import getMyList from "../../components/getMyList";
-import RowTemp from "../../components/RowTemp";
 
 export default function Home() {
   const allTitles = [...allMovies, ...allShows];
@@ -19,6 +18,8 @@ export default function Home() {
     setFeaturedMedia(getRandomTitles(allShows, 1));
   }, []);
 
+  console.log(featuredMedia)
+ 
   const spanishShows = allTitles.filter((show) =>
     show.language.includes("spanish")
   );
