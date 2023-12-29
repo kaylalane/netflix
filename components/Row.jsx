@@ -28,13 +28,7 @@ export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
         <div className="relative h-fit overflow-x-clip">
           <div className="flex flex-2 gap-2 md:h-[150px] overflow-visible">
             <div className=" hidden md:contents">
-              <Swiper
-                spaceBetween={10}
-                slidesPerView={4}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
-                c
-              >
+              <Swiper spaceBetween={10} slidesPerView={4}>
                 {titles.map((title) => (
                   <SwiperSlide key={title.title}>
                     <Item
@@ -46,7 +40,7 @@ export default function Row({ currentTitles, rowTitle, isRandomTitles }) {
                 ))}
               </Swiper>
             </div>
-{/* 
+            {/* 
             <div className=" md:hidden">
               <Swiper
                 spaceBetween={10}

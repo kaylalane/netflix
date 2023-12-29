@@ -18,7 +18,7 @@ export default function Home() {
     setFeaturedMedia(getRandomTitles(allShows, 1));
   }, []);
 
-  console.log(featuredMedia)
+  // console.log(featuredMedia)
  
   const spanishShows = allTitles.filter((show) =>
     show.language.includes("spanish")
