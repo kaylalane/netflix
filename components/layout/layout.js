@@ -11,8 +11,6 @@ export default function Layout({ children }) {
     nav.classList.add("inView");
   }
 
- 
-
   return (
     <div className="" ref={container}>
       <Navbar />

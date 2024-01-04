@@ -12,6 +12,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { myList } from "./Data";
 import Modal from "./Modal";
 import Link from "next/link";
+import styles from "../styles/item.module.scss";
 const itemWidth = 250;
 const itemHeight = 150;
 
@@ -44,47 +45,44 @@ export default function Item({ title }) {
             className="sourceImg"
           />
         </div>
-        {/*   <div className=" hidden">
-          <div className="details w-[250px] bg-gray-900 rounded-b-md p-2">
-            <div className="flex gap-2 p-1">
-              <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full">
-                <BsPlayFill className="mx-auto" />
-              </button>
-              <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full">
-                <BsPlusLg className="mx-auto" onClick={addToList} />
-              </button>
-              <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full ">
-                <BsHandThumbsUp className="mx-auto" />
-              </button>
-              <button
-                onClick={() => {
-                  setIsOpen(true);
-                }}
-                className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full float-right"
-              >
-                <BsChevronDown className="mx-auto" />
-              </button>
-            </div>
+      {/*   <div className="details">
+          <div className="details__buttons flex gap-2 p-1">
+            <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full">
+              <BsPlayFill className="mx-auto" />
+            </button>
+            <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full">
+              <BsPlusLg className="mx-auto" onClick={addToList} />
+            </button>
+            <button className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full ">
+              <BsHandThumbsUp className="mx-auto" />
+            </button>
+            <button
+              onClick={() => {
+                setIsOpen(true);
+              }}
+              className="p-1.5 border-2 border-gray-500 hover:border-[#ffffff] rounded-full float-right"
+            >
+              <BsChevronDown className="mx-auto" />
+            </button>
+          </div>
 
-            <div className="p-2 text-xs flex flex-col gap-3">
-              <div className="flex gap-2 items-center ">
-                <p className="border px-1 py-0.5">{title.rating}</p>
-                <p>{title.year}</p>
-                {title.media == "show" ? (
-                  <p>
-                    {title.seasons == 1
-                      ? title.seasons + " season"
-                      : title.seasons + " seasons"}
-                  </p>
-                ) : (
-                  <p>{title.length}</p>
-                )}
-              </div>
-              <div className="flex gap-2">
-                {title.tone && title.tone.join(" \u2022 ")}
-              </div>
+          <div className="p-2 text-xs flex flex-col gap-3">
+            <div className="flex gap-2 items-center ">
+              <p className="border px-1 py-0.5">{title.rating}</p>
+              <p>{title.year}</p>
+              {title.media == "show" ? (
+                <p>
+                  {title.seasons == 1
+                    ? title.seasons + " season"
+                    : title.seasons + " seasons"}
+                </p>
+              ) : (
+                <p>{title.length}</p>
+              )}
             </div>
-
+            <div className="flex gap-2">
+              {title.tone && title.tone.join(" \u2022 ")}
+            </div>
           </div>
         </div> */}
         {isOpen ? (

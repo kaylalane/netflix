@@ -26,14 +26,14 @@ export default function Signin() {
         <meta name="twitter:title" content="Netflix Clone" />
       </Head>
       <div className={styles.background}>
-        <nav className="p-8">
+        <nav className=" padding">
           <Link href="/" aria-label="Netflix" className="logo">
             Netflix
           </Link>
           <form></form>
         </nav>
         <main className={styles.main}>
-        <div id="modal"></div>
+          <div id="modal"></div>
           <div className={styles.signin}>
             <div className={styles.container}>
               <h1>Unlimited movies, TV Shows, and more</h1>

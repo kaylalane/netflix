@@ -1,13 +1,22 @@
 .wrapper {
   display: grid;
-	grid-template-columns: repeat(4, 1fr); /* fr fractions */
+  grid-template-columns: repeat(4, 1fr); /* fr fractions */
   align-items: start;
-	grid: 4%;
+  grid: 4%;
+  gap: 1rem;
   margin: 1rem 0;
+  font-size: 14px;
+}
+
+.socials {
+  color: white;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .footer {
-  z-index: 0;
+  color: gray;
   font-size: x-small;
   padding: 2rem;
 }
