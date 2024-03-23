@@ -458,22 +458,6 @@ export const allShows = [
     description:
       "The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.",
   },
-  {
-    title: "Daybreak",
-    img: "/daybreak.jpeg",
-    banner: "/daybreak-banner.webp",
-    genres: ["Teen TV Shows", "Comedies", "TV Horror"],
-    tone: ["Offbeat", "Irreverent", "Exciting"],
-    media: "show",
-    year: "2019",
-    rating: "TV-MA",
-    seasons: "1",
-    episodes: "10",
-    language: "english",
-    cast: ["Colin Ford", "Alyvia Alyn Lind", "Sophie Simnett"],
-    description:
-      'Navigating a post-apocalyptic world full of zombies and "Mad Max"-style gangs, a teenage outcast searches for his lost love.',
-  },
 ];
 
 export const tvTemplate = [

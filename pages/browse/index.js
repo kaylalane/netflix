@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Head from "next/head";
 import Image from "next/image";
-import {lazy, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, useEffect, useMemo, useRef, useState } from "react";
 import Layout from "../../components/layout/layout";
 import { myList, allShows, allMovies } from "../../components/Data";
 import { animatedTVShows } from "../../lib/data";
@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   // console.log(featuredMedia)
- 
+
   const spanishShows = allTitles.filter((show) =>
     show.language.includes("spanish")
   );
@@ -111,6 +111,7 @@ export default function Home() {
           id="featured-image"
           width={1280}
           height={720}
+          loading="eager"
         />
       </div>
       <Row currentTitles={myList} rowTitle={"My List"} isRandomTitles={false} />
